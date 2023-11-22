@@ -21,7 +21,14 @@ to keep research code samples up to date with the latest technologies.
 
 ### Version History
 
-**[v0.0.1](https://github.com/AJarombek/assembly-programming/tree/v0.0.1) - Assembly x86/NASM Programs**
+**[v0.0.2](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.2) - Python Programs**
+
+> Release Date: November 22nd, 2023
+
+* Port over Python programs from the [python-programming](https://github.com/AJarombek/python-programming/) 
+repository.
+
+**[v0.0.1](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.1) - Assembly x86/NASM Programs**
 
 > Release Date: November 21st, 2023
 
