@@ -1,0 +1,29 @@
+# Docker compose file for the react-webpack-seed application
+# Author: Andrew Jarombek
+# Date: 3/17/2019
+
+# Version of the compose file format
+version: '3.5'
+
+# Define different application services
+services:
+  # Define a react-webpack-seed app
+  react-webpack-seed:
+    container_name: react-webpack-seed
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: yarn run start
+    # Mount the app-volume onto the '/usr/src/app' directory in the container
+    volumes:
+      - type: volume
+        source: app-volume
+        target: '/usr/src/app'
+    # Map port 8080 inside the container to port 80 on the Docker host
+    ports:
+      - target: 8080
+        published: 80
+
+# Define volumes for Docker to create
+volumes:
+  app-volume:

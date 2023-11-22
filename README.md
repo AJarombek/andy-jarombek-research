@@ -18,8 +18,17 @@ to keep research code samples up to date with the latest technologies.
 |------------|----------------------------------------|
 | `.github`  | GitHub Actions for CI/CD pipelines.    |
 | `assembly` | Various dialects of assembly language. |
+| `python`   | Python programming.                    |
+| `react`    | React.js front-end applications.       |
 
 ### Version History
+
+**[v0.0.3](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.3) - React Webpack Seed**
+
+> Release Date: November 22nd, 2023
+
+* Port over the **React Webpack Seed** application from the 
+[react-webpack-seed](https://github.com/AJarombek/react-webpack-seed/) repository.
 
 **[v0.0.2](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.2) - Python Programs**
 
