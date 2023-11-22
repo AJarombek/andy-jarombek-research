@@ -1,0 +1,5 @@
+.idea
+**/*.o
+assembly/x86/arithmetic
+assembly/x86/atomic
+assembly/x86/guess_number
