@@ -35,7 +35,7 @@ def read(source: str, destination: str) -> None:
 
             while progress < total_size:
                 headers = {'Range': f'bytes={progress}-{progress + range_length}'}
-                res = requests.get(source, headers=headers)
+                res = requests.get(source, headers=headers, timeout=120)
                 f.write(res.content)
 
                 progress += range_length

@@ -28,4 +28,5 @@ fail-under = 10.0
 py-version = "3.11"
 
 [tool.pylint."messages control"]
-disable = ["logging-fstring-interpolation"]
+disable = ["logging-fstring-interpolation", "missing-function-docstring", "missing-module-docstring"]
+good-names = ["i", "j", "f"]

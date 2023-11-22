@@ -4,10 +4,10 @@ Author: Andrew Jarombek
 Date: 1/24/2023
 """
 
-import read_file_memory
-import read_file_stream
-import read_file_range_header
-import read_zipfile
+from http_requests import read_file_memory
+from http_requests import read_file_stream
+from http_requests import read_file_range_header
+from http_requests import read_zipfile
 
 if __name__ == '__main__':
     # Datasets from https://data.gov/
