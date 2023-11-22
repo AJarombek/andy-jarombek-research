@@ -1,0 +1,22 @@
+/**
+ * @author Andrew Jarombek
+ * @since 3/30/3018
+ */
+
+// The technology-list div is the grid container for the technologies
+.technology-list {
+  // Creates a block level grid
+  display: grid;
+
+  // Define the columns in the grid.  In this case there is one column named 'main' that takes up 100%
+  // of the grid containers width
+  grid-template-columns: [main] 100%;
+
+  // We don't have a defined number of rows in the grid.  Auto generate each one with a height of 200px
+  grid-auto-rows: 200px;
+
+  // Define the gap between each row in the grid as 20px and the gap between columns as 0
+  grid-gap: 20px 0;
+
+  justify-items: stretch;
+}

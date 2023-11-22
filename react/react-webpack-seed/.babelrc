@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
+    }
+    ],
+    "@babel/react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    ["@babel/plugin-proposal-class-properties", { "loose": false }],
+    "@babel/plugin-proposal-optional-chaining",
+  ]
+}

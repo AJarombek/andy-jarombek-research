@@ -1,0 +1,56 @@
+/**
+ * @author Andrew Jarombek
+ * @since 3/30/2018
+ */
+
+@import 'App';
+
+$darker-border: #aaa;
+
+// The technology class is the grid container.  It has two rows and two columns
+.technology {
+  border-radius: 4px;
+  border: #ccc 1px solid;
+  @include transition('border-color', $darker-border);
+  box-shadow: 0 1px 7px #ddd;
+  background-color: #fff;
+
+  // Define the grid layout
+  display: grid;
+  grid-template-columns: [image] 35% [text] 65% [end];
+  grid-template-rows: [top] 50% [middle] 50% [bottom];
+
+  // The image covers all rows in the first column
+  figure {
+    grid-column-start: image;
+    grid-column-end: text;
+    grid-row-start: top;
+    grid-row-end: bottom;
+    align-self: center;
+    margin: auto;
+  }
+
+  img {
+    height: 150px;
+  }
+
+  // The name covers the first row in the second column
+  .tech-name {
+    grid-column-start: text;
+    grid-column-end: end;
+    grid-row-start: top;
+    grid-row-end: middle;
+    align-self: end;
+    font-size: 18px;
+  }
+
+  // The date covers the second row in the second column
+  .tech-release-date {
+    grid-column-start: text;
+    grid-column-end: end;
+    grid-row-start: middle;
+    grid-row-end: bottom;
+    align-self: start;
+    font-size: 18px;
+  }
+}

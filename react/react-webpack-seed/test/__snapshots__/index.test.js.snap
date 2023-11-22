@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Technology List with No Props 1`] = `
+<div
+  className="technology-list"
+>
+  <p>
+    No Data
+  </p>
+</div>
+`;

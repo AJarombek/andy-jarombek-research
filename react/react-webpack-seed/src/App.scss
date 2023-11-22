@@ -1,0 +1,84 @@
+/**
+ * Sass styling for the App component
+ * @author Andrew Jarombek
+ * @since 3/22/2018
+ */
+
+@font-face {
+  font-family: Sylexiad;
+  font-weight: normal;
+  src: url('https://asset.jarombek.com/fonts/SylexiadSansThin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Sylexiad-Bold;
+  font-weight: bold;
+  src: url('https://asset.jarombek.com/fonts/SylexiadSansThin-Bold.ttf') format('truetype');
+}
+
+/**
+ * A mixin that sets the font to sylexiad
+ */
+@mixin sylexiad {
+  font: {
+    family: 'Sylexiad', Helvetica, sans-serif !important;
+    weight: normal;
+    style: normal;
+  }
+  letter-spacing: 0.4px;
+}
+
+/**
+ * A mixin that sets the font to sylexiad bold
+ */
+@mixin sylexiad-bold {
+  font: {
+    family: 'Sylexiad-Bold', Helvetica, sans-serif !important;
+    weight: bold;
+    style: normal;
+  }
+}
+
+/**
+ * A mixin that simplifies transition generation
+ * @param $property - the property of the element that transitions
+ * @param $result - the resulting style of the transition
+ * @param $time - the time the transition takes to complete (optional)
+ */
+@mixin transition($property, $result, $time: 0.3s, $speed: ease) {
+  transition: #{$property} $time #{$speed};
+
+  // #{} syntax compiles the contents as a property name or selector
+  &:hover {
+    #{$property}: $result;
+  }
+}
+
+body {
+  background-color: #eee;
+}
+
+p {
+  font-weight: bold;
+  color: gray;
+  @include sylexiad-bold;
+}
+
+.title-container {
+  height: 160px;
+  padding-top: 5px;
+}
+
+.title {
+  color: #000;
+  font-size: 28px;
+  text-align: center;
+  margin: 5% auto;
+  @include transition('font-size', 28.6px, $speed: ease-in-out);
+}
+
+.sub-title {
+  @include sylexiad;
+  font-size: 24px;
+  text-align: center;
+}
