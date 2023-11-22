@@ -1,5 +1,13 @@
 .idea
 **/*.o
+**/__pycache__
+**/.vagrant
+
 assembly/x86/arithmetic
 assembly/x86/atomic
 assembly/x86/guess_number
+
+python/http_requests/dest/memory
+python/http_requests/dest/range_header
+python/http_requests/dest/stream
+python/mojo/*.log

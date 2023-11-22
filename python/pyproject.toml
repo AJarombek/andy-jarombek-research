@@ -1,0 +1,31 @@
+# Poetry configuration for a Python virtual environment.
+# Author: Andrew Jarombek
+# Date: 1/5/2023
+
+[tool.poetry]
+name = "python-programming"
+version = "0.1.0"
+description = "Python Programming Repository"
+authors = ["Andrew Jarombek <andrew@jarombek.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.dev-dependencies]
+black = "22.10.0"
+pylint = "2.15.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+skip-string-normalization = true
+target-version = ["py311"]
+
+[tool.pylint.main]
+fail-under = 10.0
+py-version = "3.11"
+
+[tool.pylint."messages control"]
+disable = ["logging-fstring-interpolation"]

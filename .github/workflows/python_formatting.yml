@@ -1,0 +1,45 @@
+# GitHub Action for performing Python Formatting
+# Author: Andrew Jarombek
+# Date: 1/7/2023
+
+name: Python Formatting
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  black_formatting:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Install Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Black formatting dry run
+        uses: psf/black@stable
+        with:
+          options: "--check"
+          src: "python"
+
+      - name: Install Poetry, Pylint, and project dependencies
+        working-directory: ./python
+        run: |
+          pip install poetry
+          poetry config virtualenvs.create false
+          poetry install
+
+      - name: Pylint code analysis
+        working-directory: ./python
+        run: pylint $(git ls-files '*.py')
