@@ -1,0 +1,29 @@
+/**
+ * Stylesheet for the RepositoryCount component.
+ * Author: Andrew Jarombek
+ * Date: 4/15/2020
+ */
+
+@import "../../vars";
+
+.repository-count {
+  grid-area: repoCount;
+  height: 125px;
+
+  h3, h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 42px;
+    .hoverPurple()
+  }
+
+  .error {
+    height: 100%;
+  }
+}

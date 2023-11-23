@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="items top-language"
+>
+  <p>
+    Most Popular Programming Language
+  </p>
+  <h2>
+    
+  </h2>
+  <p>
+    Top language in
+     
+    <b>
+      0
+    </b>
+     
+    repositories.
+  </p>
+</div>
+`;

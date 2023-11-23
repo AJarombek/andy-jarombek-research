@@ -1,0 +1,59 @@
+/**
+ * Stylesheet for the UserInfo component.
+ * Author: Andrew Jarombek
+ * Date: 4/11/2020
+ */
+
+@import "../../vars";
+
+.user-info {
+  grid-area: userInfo;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "logo name    "
+    "logo location"
+    "logo website ";
+
+  height: 125px;
+
+  figure {
+    grid-area: logo;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  h3, p, a {
+    margin: 0 0 0 10px;
+  }
+
+  h3 {
+    grid-area: name;
+  }
+
+  p {
+    grid-area: location;
+  }
+
+  a {
+    grid-area: website;
+    transition: color ease 0.4s;
+
+    &:hover {
+      color: @contrastPurple;
+    }
+  }
+
+  .error {
+    grid-column: 1 e("/") 3;
+    grid-row: 1 e("/") 4;
+  }
+}
