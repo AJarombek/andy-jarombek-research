@@ -1,4 +1,4 @@
-name: Format and Lint
+name: React Webpack Seed Format and Lint
 
 on:
   push:
@@ -20,13 +20,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Initialize Yarn
-        working-directory: ./react/react-webpack-seed
+        working-directory: ./react/webpack-seed
         run: yarn
 
       - name: Lint JavaScript Code
-        working-directory: ./react/react-webpack-seed
+        working-directory: ./react/webpack-seed
         run: yarn lint
 
       - name: Format JavaScript Code
-        working-directory: ./react/react-webpack-seed
+        working-directory: ./react/webpack-seed
         run: yarn prettier:check

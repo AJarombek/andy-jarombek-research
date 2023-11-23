@@ -1,0 +1,19 @@
+/**
+ * Variables re-used throughout the application.
+ * Author: Andrew Jarombek
+ * Date: 4/9/2020
+ */
+
+@darkTheme: #454443;
+@darkerTheme: darken(@darkTheme, 10%);
+@defaultFontColor: #e9eaed;
+@contrastPurple: #8a4cff;
+
+.hoverPurple() {
+  color: lighten(@contrastPurple, 20%);
+  transition: color ease 0.4s;
+
+  &:hover {
+    color: @contrastPurple;
+  }
+}

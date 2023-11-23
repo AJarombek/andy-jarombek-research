@@ -1,0 +1,58 @@
+/**
+ * Stylesheet for the TopLanguage component.
+ * Continue to be brave.
+ * Author: Andrew Jarombek
+ * Date: 4/15/2020
+ */
+
+@import "../../vars";
+
+.top-language {
+  grid-area: topLang;
+  height: 125px;
+
+  @media (max-width: 750px) {
+    height: auto;
+  }
+
+  p, h2 {
+    @media (max-width: 750px) {
+      text-align: center;
+    }
+  }
+
+  p:nth-child(1) {
+    @media (max-width: 750px) {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    margin: 20px 0;
+    font-size: 24px;
+    .hoverPurple();
+
+    @media (max-width: 750px) {
+      font-size: 32px;
+    }
+  }
+
+  p:nth-child(3) {
+    @media (max-width: 750px) {
+      font-size: 18px;
+    }
+
+    b {
+      color: @contrastPurple;
+      font-size: 18px;
+
+      @media (max-width: 750px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .error {
+    height: 100%;
+  }
+}
