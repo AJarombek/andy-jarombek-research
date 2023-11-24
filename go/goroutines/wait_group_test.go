@@ -72,7 +72,7 @@ func TestWaitGroup(t *testing.T) {
 		}
 	}(endpoints)
 
-	result, ok := makeRequests(endpoints)
+	_, ok := makeRequests(endpoints)
 
 	// assert.Equal(t, 20, result)
 	assert.True(t, ok)
