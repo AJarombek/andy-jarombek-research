@@ -18,6 +18,7 @@ to keep research code samples up to date with the latest technologies.
 |------------|----------------------------------------|
 | `.github`  | GitHub Actions for CI/CD pipelines.    |
 | `assembly` | Various dialects of assembly language. |
+| `go`       | Go programming.                        |
 | `python`   | Python programming.                    |
 | `react`    | React.js front-end applications.       |
 
