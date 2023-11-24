@@ -1,0 +1,118 @@
+# GitHub Action for running C++ tests using CMake.
+# Author: Andrew Jarombek
+# Date: 4/30/2023
+
+name: C++ Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  programs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Check Out Repository Code
+        uses: actions/checkout@v3
+
+      - run: echo "Checked out branch '${{ github.ref }}' of the ${{ github.repository }} repository"
+
+      - name: Install CMake
+        run: sudo apt-get update && sudo apt-get install cmake
+
+      - name: Install Google Test
+        run: |
+          sudo apt-get install libgtest-dev
+          cd /usr/src/gtest
+          sudo cmake CMakeLists.txt
+          sudo make
+          sudo cp lib/libgtest.a /usr/lib/libgtest.a
+          sudo cp lib/libgtest_main.a /usr/lib/libgtest_main.a
+
+      - name: Run Data Alignment
+        working-directory: cpp/data-alignment
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./data_alignment
+
+      - name: Run Classes
+        working-directory: cpp/classes
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./AccountTests
+
+      - name: Run Vector
+        working-directory: cpp/vector
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./VectorTests
+
+      - name: Run Predicates
+        working-directory: cpp/predicates
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./PredicatesTests
+
+      - name: Run Pointers
+        working-directory: cpp/pointers
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./PointersTests
+
+      - name: Run Mutexes
+        working-directory: cpp/mutexes
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./MutexesTests
+
+      - name: Run Constants
+        working-directory: cpp/constants
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./ConstantsTests
+
+      - name: Run References
+        working-directory: cpp/references
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./ReferencesTests
+
+      - name: Run Memory Arena
+        working-directory: cpp/memory-arena
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          ./MemoryArenaTests

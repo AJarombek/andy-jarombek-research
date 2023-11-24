@@ -1,0 +1,88 @@
+# GitHub Action for running C tests using CMake.
+# Author: Andrew Jarombek
+# Date: 4/30/2023
+
+name: C Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  programs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Check Out Repository Code
+        uses: actions/checkout@v3
+
+      - run: echo "Checked out branch '${{ github.ref }}' of the ${{ github.repository }} repository"
+
+      - name: Install CMake
+        run: sudo apt-get update && sudo apt-get install cmake
+
+      - name: Create build directory
+        run: mkdir build && cd build
+
+      - name: Configure CMake for Data Alignment
+        working-directory: build
+        run: cmake ../c/data-alignment
+
+      - name: Build Inline Functions
+        working-directory: build
+        run: cmake --build .
+
+      - name: Run Data Alignment
+        working-directory: build
+        run: ./data_alignment
+  check_tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Check Out Repository Code
+        uses: actions/checkout@v3
+
+      - run: echo "Checked out branch '${{ github.ref }}' of the ${{ github.repository }} repository"
+
+      - name: Install CMake
+        run: sudo apt-get update && sudo apt-get install cmake check
+
+      - name: Create Inline Functions build directory
+        working-directory: c/inline-functions
+        run: mkdir build
+
+      - name: Configure CMake for Inline Functions
+        working-directory: c/inline-functions/build
+        run: cmake -DUSE_CHECK=ON ..
+
+      - name: Build Inline Functions
+        working-directory: c/inline-functions/build
+        run: cmake --build .
+
+      - name: Test Inline Functions
+        working-directory: c/inline-functions/build
+        run: ctest -V
+
+      - name: Create Pure Functions build directory
+        working-directory: c/pure-functions
+        run: mkdir build
+
+      - name: Configure CMake for Pure Functions
+        working-directory: c/pure-functions/build
+        run: cmake -DUSE_CHECK=ON ..
+
+      - name: Build Pure Functions
+        working-directory: c/pure-functions/build
+        run: cmake --build .
+
+      - name: Test Pure Functions
+        working-directory: c/pure-functions/build
+        run: ctest -V
