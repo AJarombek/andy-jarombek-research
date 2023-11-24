@@ -1,0 +1,46 @@
+# GitHub Action for building Go binaries
+# Author: Andrew Jarombek
+# Date: 9/22/2022
+
+name: Go Binaries
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  go_binaries:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container: ajarombek/go-alpine-linux-programming:latest
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - run: echo "Checked out branch '${{ github.ref }}' of the ${{ github.repository }} repository"
+
+      - name: Files installed from repository
+        working-directory: ./go
+        run: ls -ltra
+
+      - name: Build the channel_example Go binary using Please Build
+        working-directory: ./go
+        run: plz build //goroutines/channel_example:binary -vvv
+
+      - name: Run the channel_example binary
+        working-directory: ./go
+        run: ./plz-out/bin/goroutines/channel_example/channel_example
+
+      - name: Build the goroutine_example Go binary using Please Build
+        working-directory: ./go
+        run: plz build //goroutines/goroutine_example:binary -vvv
+
+      - name: Run the goroutine_example binary
+        working-directory: ./go
+        run: ./plz-out/bin/goroutines/goroutine_example/goroutine_example

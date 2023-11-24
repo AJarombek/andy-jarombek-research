@@ -18,10 +18,18 @@ to keep research code samples up to date with the latest technologies.
 |------------|----------------------------------------|
 | `.github`  | GitHub Actions for CI/CD pipelines.    |
 | `assembly` | Various dialects of assembly language. |
+| `go`       | Go programming.                        |
 | `python`   | Python programming.                    |
 | `react`    | React.js front-end applications.       |
 
 ### Version History
+
+**[v0.0.5](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.5) - Go Programs**
+
+> Release Date: November 24th, 2023
+
+* Port over Python programs from the [go-programming](https://github.com/AJarombek/go-programming/) 
+repository.
 
 **[v0.0.4](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.4) - GraphQL React Prototype**
 

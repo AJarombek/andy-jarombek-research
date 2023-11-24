@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Post-Kayak Swim #2",
+    "date": "7/17/2022",
+    "type": "swim",
+    "miles": 0.20,
+    "time": "15:51",
+    "description": "Water was a little murky today :/"
+  },
+  {
+    "name": "Around Tod's Point",
+    "date": "7/17/2022",
+    "type": "kayak",
+    "miles": 5.89,
+    "time": "1:38:27",
+    "description": "Got a bit burnt, otherwise really nice out"
+  },
+  {
+    "name": "Day 3",
+    "date": "7/17/2022",
+    "type": "run",
+    "miles": 5.48,
+    "time": "38:02",
+    "description": "Feeling better each day which is good"
+  },
+  {
+    "name": "Day 2",
+    "date": "7/16/2022",
+    "type": "run",
+    "miles": 2.54,
+    "time": "18:22",
+    "description": "Felt a bit better than yesterday but kept it short"
+  },
+  {
+    "name": "Core Exercise",
+    "date": "7/16/2022",
+    "type": "core",
+    "miles": null,
+    "time": "17:39",
+    "description": null
+  },
+  {
+    "name": "Post-Kayak Swim",
+    "date": "7/15/2022",
+    "type": "swim",
+    "miles": 0.24,
+    "time": "18:05",
+    "description": "Felt refreshing after Kayaking, also trying to slowly get better swimming form"
+  },
+  {
+    "name": "Tomac Ln -> Stamford",
+    "date": "7/15/2022",
+    "type": "kayak",
+    "miles": 5.15,
+    "time": "1:24:31",
+    "description": "Beautiful day out, took the day off to relax a bit"
+  },
+  {
+    "name": "First Day Back",
+    "date": "7/15/2022",
+    "type": "run",
+    "miles": 4.22,
+    "time": "31:34",
+    "description": "Felt awful, which isn't much of a surprise after 10 days off"
+  }
+]
