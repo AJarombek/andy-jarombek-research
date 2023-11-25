@@ -26,11 +26,18 @@ to keep research code samples up to date with the latest technologies.
 
 ### Version History
 
+**[v0.0.6](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.6) - C & C++ Programs**
+
+> Release Date: November 24th, 2023
+
+* Port over C & C++ programs from the [cpp-c-programming](https://github.com/AJarombek/cpp-c-programming/) 
+repository.
+
 **[v0.0.5](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.5) - Go Programs**
 
 > Release Date: November 24th, 2023
 
-* Port over Python programs from the [go-programming](https://github.com/AJarombek/go-programming/) 
+* Port over Go programs from the [go-programming](https://github.com/AJarombek/go-programming/) 
 repository.
 
 **[v0.0.4](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.4) - GraphQL React Prototype**
