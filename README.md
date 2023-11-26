@@ -12,6 +12,18 @@ from those repositories will be migrated here, and the old repositories will be 
 Hopefully, this approach will make it easier to find and reference research code samples.  It will also make it easier 
 to keep research code samples up to date with the latest technologies.
 
+### Commands
+
+**Run GitHub Actions Locally**
+
+```bash
+# Install the act CLI
+brew install act
+
+# Run a specific GitHub Actions workflow
+act -W '.github/workflows/javascript-e2e-test.yml'
+```
+
 ### Files
 
 | Filename   | Description                            |
