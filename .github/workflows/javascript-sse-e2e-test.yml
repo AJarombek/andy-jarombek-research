@@ -1,0 +1,40 @@
+name: JavaScript Server-Sent Events E2E Test with Puppeteer
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  e2e-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install Dependencies
+        working-directory: javascript/sse
+        run: yarn
+
+      - name: Start WebSocket Server
+        working-directory: javascript/sse
+        run: node server.js &
+
+      - name: Wait for Server to Start
+        run: sleep 2
+
+      - name: Run Puppeteer E2E Test
+        working-directory: javascript/sse
+        run: node e2e-test.js
