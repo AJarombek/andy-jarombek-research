@@ -1,4 +1,4 @@
-name: JavaScript E2E Tests with Puppeteer
+name: JavaScript Server-Sent Events E2E Test with Puppeteer
 
 on:
   push:
@@ -12,12 +12,6 @@ jobs:
   e2e-test:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    strategy:
-      matrix:
-        directory:
-          - websockets
-          - sse
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -31,13 +25,16 @@ jobs:
         run: npm install -g yarn
 
       - name: Install Dependencies
-        run: yarn --cwd javascript/${{ matrix.directory }}
+        working-directory: javascript/sse
+        run: yarn
 
       - name: Start WebSocket Server
-        run: node javascript/${{ matrix.directory }}/server.js &
+        working-directory: javascript/sse
+        run: node server.js &
 
       - name: Wait for Server to Start
         run: sleep 2
 
       - name: Run Puppeteer E2E Test
-        run: node javascript/${{ matrix.directory }}/e2e-test.js
+        working-directory: javascript/sse
+        run: node e2e-test.js
