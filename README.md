@@ -21,26 +21,34 @@ to keep research code samples up to date with the latest technologies.
 brew install act
 
 # Run a specific GitHub Actions workflow
-act -W '.github/workflows/javascript-e2e-test.yml'
+act -W '.github/workflows/go-tests.yml'
 ```
 
 ### Files
 
-| Filename   | Description                            |
-|------------|----------------------------------------|
-| `.github`  | GitHub Actions for CI/CD pipelines.    |
-| `assembly` | Various dialects of assembly language. |
-| `c`        | C programming.                         |
-| `cpp`      | C++ programming.                       |
-| `go`       | Go programming.                        |
-| `python`   | Python programming.                    |
-| `react`    | React.js front-end applications.       |
+| Filename     | Description                            |
+|--------------|----------------------------------------|
+| `.github`    | GitHub Actions for CI/CD pipelines.    |
+| `assembly`   | Various dialects of assembly language. |
+| `c`          | C programming.                         |
+| `cpp`        | C++ programming.                       |
+| `go`         | Go programming.                        |
+| `javascript` | JavaScript programming.                |
+| `python`     | Python programming.                    |
+| `react`      | React.js front-end applications.       |
 
 ### Version History
 
+**[v0.0.7](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.7) - Front-End Programs**
+
+> Release Date: November 26th, 2023
+
+* Port over Front-End programs from the [front-end-prototypes](https://github.com/AJarombek/front-end-prototypes/) 
+repository.
+
 **[v0.0.6](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.6) - C & C++ Programs**
 
-> Release Date: November 24th, 2023
+> Release Date: November 25th, 2023
 
 * Port over C & C++ programs from the [cpp-c-programming](https://github.com/AJarombek/cpp-c-programming/) 
 repository.
