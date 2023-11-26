@@ -1,0 +1,25 @@
+/**
+ * Variables for Databricks infrastructure.
+ * Author: Andrew Jarombek
+ * Date: 11/23/2022
+ */
+
+variable "databricks_account_username" {
+  description = "Username for my Databricks account"
+  default     = ""
+  type        = string
+}
+
+variable "databricks_account_password" {
+  description = "Password for my Databricks account"
+  default     = ""
+  type        = string
+  sensitive   = true
+}
+
+variable "databricks_account_id" {
+  description = "ID for my Databricks account"
+  default     = ""
+  type        = string
+  sensitive   = true
+}

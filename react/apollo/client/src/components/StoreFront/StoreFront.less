@@ -1,0 +1,21 @@
+/**
+ * Stylesheet for the StoreFront component.
+ * Author: Andrew Jarombek
+ * Date: 5/14/2020
+ */
+
+@import "../../vars";
+
+.store-front {
+  min-height: 100vh;
+  background-color: lighten(@lilac, 10%);
+
+  > .body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 10px;
+  }
+}

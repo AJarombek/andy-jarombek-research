@@ -1,0 +1,37 @@
+"""
+Sample queries that can be used on this Apollo server.
+Author: Andrew Jarombek
+Date: 7/29/2020
+"""
+
+query {
+    ping {
+        time
+    }
+}
+
+query oneFlower {
+    flower(id: 1) {
+        name
+        image
+    }
+}
+
+query allFlowers {
+    flowers {
+        name
+        image
+    }
+}
+
+query flowersIn($in: [ID]!) {
+    flowersIn(in: $in) {
+        id
+        name
+        description
+    }
+}
+
+mutation purchaseFlowers($purchases: [FlowerPurchase]!) {
+    purchaseFlowers(purchases: $purchases)
+}

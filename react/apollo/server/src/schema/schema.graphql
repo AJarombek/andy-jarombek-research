@@ -1,0 +1,47 @@
+"""
+Root GraphQL schema file.
+Author: Andrew Jarombek
+Date: 5/18/2020
+"""
+
+type Query {
+    ping: Ping
+    flower(id: ID!): Flower
+    flowersIn(in: [ID]!): [Flower]
+    flowers: [Flower]
+}
+
+type Mutation {
+    _: Boolean
+    purchaseFlowers(purchases: [FlowerPurchase]): Boolean
+}
+
+type Subscription {
+    _: Boolean
+}
+
+type Ping {
+    time: Int!
+}
+
+type Flower {
+    id: ID!,
+    name: String!,
+    url: String!,
+    type: FlowerLifespan!,
+    inStock: Boolean,
+    onSale: Boolean,
+    count: Int
+    price: Float,
+    salePrice: Float,
+    description: String
+}
+
+enum FlowerLifespan {
+    ANNUAL, PERENNIAL, SHRUB
+}
+
+input FlowerPurchase {
+    id: ID!,
+    count: Int!
+}

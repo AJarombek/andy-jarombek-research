@@ -1,0 +1,20 @@
+# Docker Compose configuration for the client in my local environment
+# Author: Andrew Jarombek
+# Date: 8/2/2020
+
+version: '3.7'
+services:
+  apollo-client-prototype:
+    domainname: apollo-client-prototype
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host
+    ports:
+      - 8085:80
+    networks:
+      - database_local-apollo-client-server-net
+
+networks:
+  database_local-apollo-client-server-net:
+    external: true

@@ -1,0 +1,87 @@
+/**
+ * Stylesheet for the CheckoutItem component.
+ * Author: Andrew Jarombek
+ * Date: 8/21/2020
+ */
+
+@import "../../vars";
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 1000px;
+  background-color: lighten(@lilac, 13%);
+
+  .remove-icon {
+    font-family: 'ElegantIcons', Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  & > img {
+    width: 120px;
+    height: 160px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 0 10px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+
+    .flower-name {
+      font-family: 'RobotoSlab-Bold', Helvetica, sans-serif;
+      font-size: 18px;
+    }
+
+    .flower-quantity {
+      font-family: 'Roboto-Regular', Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+
+      input {
+        margin-left: 10px;
+        height: 35px;
+        width: 65px;
+      }
+    }
+
+    .flower-prices {
+      margin-top: 18px;
+
+      p {
+        font-family: 'Roboto-Regular', Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0;
+      }
+
+      &.sale-prices {
+        display: flex;
+
+        p:nth-child(1) {
+          text-decoration: line-through;
+          color: #444;
+        }
+
+        p:nth-child(2) {
+          font-family: 'Roboto-Bold', Helvetica, sans-serif;
+          padding-left: 8px;
+          color: @darkGreen;
+        }
+      }
+    }
+  }
+
+  .total-cost {
+    font-family: 'Roboto-Bold', Helvetica, sans-serif;
+    margin: 20px 20px 0 auto;
+    align-self: flex-start;
+  }
+}

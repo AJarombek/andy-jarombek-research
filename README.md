@@ -26,18 +26,27 @@ act -W '.github/workflows/go-tests.yml'
 
 ### Files
 
-| Filename     | Description                            |
-|--------------|----------------------------------------|
-| `.github`    | GitHub Actions for CI/CD pipelines.    |
-| `assembly`   | Various dialects of assembly language. |
-| `c`          | C programming.                         |
-| `cpp`        | C++ programming.                       |
-| `go`         | Go programming.                        |
-| `javascript` | JavaScript programming.                |
-| `python`     | Python programming.                    |
-| `react`      | React.js front-end applications.       |
+| Filename     | Description                                 |
+|--------------|---------------------------------------------|
+| `.github`    | GitHub Actions for CI/CD pipelines.         |
+| `assembly`   | Various dialects of assembly language.      |
+| `c`          | C programming.                              |
+| `cpp`        | C++ programming.                            |
+| `databricks` | Databricks platform programming with Spark. |
+| `go`         | Go programming.                             |
+| `javascript` | JavaScript programming.                     |
+| `python`     | Python programming.                         |
+| `react`      | React.js front-end applications.            |
 
 ### Version History
+
+**[v0.0.8](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.8) - Databricks & Apollo Programs**
+
+> Release Date: November 26th, 2023
+
+* Port over Databricks programs from the [databricks-spark-programs](https://github.com/AJarombek/databricks-spark-programs/) 
+repository and an Apollo app from the [apollo-client-server-prototype](https://github.com/AJarombek/apollo-client-server-prototype/) 
+repository.
 
 **[v0.0.7](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.7) - Front-End Programs**
 
