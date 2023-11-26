@@ -1,0 +1,43 @@
+name: JavaScript E2E Tests with Puppeteer
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  e2e-test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        directory:
+          - websockets
+          - sse
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install Dependencies
+        run: yarn --cwd javascript/${{ matrix.directory }}
+
+      - name: Start WebSocket Server
+        run: node javascript/${{ matrix.directory }}/server.js &
+
+      - name: Wait for Server to Start
+        run: sleep 2
+
+      - name: Run Puppeteer E2E Test
+        run: node javascript/${{ matrix.directory }}/e2e-test.js
