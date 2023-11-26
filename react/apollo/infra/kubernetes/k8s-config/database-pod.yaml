@@ -1,0 +1,29 @@
+# Kubernetes pod for the database of the apollo prototype.
+# Author: Andrew Jarombek
+# Date: 8/2/2020
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apollo-prototype-database
+  namespace: sandbox
+  labels:
+    version: v1.0.0
+    environment: production
+    application: apollo-client-server-prototype
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: workload
+                operator: In
+                values:
+                  - development-tests
+  containers:
+    - name: apollo-prototype-database
+      image: ajarombek/apollo-prototype-database:latest
+      ports:
+        - containerPort: 5432
+          protocol: TCP

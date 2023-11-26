@@ -1,0 +1,10 @@
+.idea
+node_modules
+client/.nyc_output
+client/coverage
+server/dist
+server/combined.log
+server/error.log
+**/.terraform
+client/cypress/screenshots
+client/cypress/videos
