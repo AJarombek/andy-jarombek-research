@@ -2,7 +2,7 @@
 # Author: Andrew Jarombek
 # Date: 10/18/2022
 
-path = package_name()
+path = "."
 
 genrule(
     name = "llvm_version",

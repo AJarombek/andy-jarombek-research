@@ -30,7 +30,7 @@ jobs:
       - name: LLVM Code Sample Logs
         working-directory: ./llvm
         run: >
-          LOG_DIR=plz-out/gen/llvm && 
+          LOG_DIR=plz-out/gen && 
           cat $LOG_DIR/llvm.log && 
           cat $LOG_DIR/llvm_hello_world.log && 
           cat $LOG_DIR/llvm_basics.log && 

@@ -30,6 +30,6 @@ jobs:
       - name: R Code Logs
         working-directory: ./r
         run: >
-          LOG_DIR=plz-out/gen/r && 
+          LOG_DIR=plz-out/gen && 
           cat $LOG_DIR/r_basics.log && 
           cat $LOG_DIR/r.log

@@ -30,7 +30,7 @@ jobs:
       - name: Numpy Code Sample Logs
         working-directory: ./data-analytics
         run: >
-          LOG_DIR=plz-out/gen/python/numpy && 
+          LOG_DIR=plz-out/gen/numpy && 
           cat $LOG_DIR/numpy_first_steps.log && 
           cat $LOG_DIR/numpy_next_steps.log && 
           cat $LOG_DIR/numpy_advanced.log && 
@@ -54,7 +54,7 @@ jobs:
       - name: Numpy Code Sample Logs
         working-directory: ./data-analytics
         run: >
-          LOG_DIR=plz-out/gen/python/matplotlib && 
+          LOG_DIR=plz-out/gen/matplotlib && 
           cat $LOG_DIR/matplotlib-first-steps.log
 
   pandas:
@@ -75,7 +75,7 @@ jobs:
       - name: Numpy Code Sample Logs
         working-directory: ./data-analytics
         run: >
-          LOG_DIR=plz-out/gen/python/pandas && 
+          LOG_DIR=plz-out/gen/pandas && 
           cat $LOG_DIR/pandas-first-steps.log && 
           cat $LOG_DIR/pandas-group-by.log && 
           cat $LOG_DIR/pandas-next-steps.log && 

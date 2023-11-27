@@ -2,7 +2,7 @@
 # Author: Andrew Jarombek
 # Date: 10/17/2022
 
-path = package_name()
+path = "."
 
 genrule(
     name = "r_version",
