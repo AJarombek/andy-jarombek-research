@@ -5,8 +5,6 @@
 name: Databricks Terraform Formatting and Planning
 
 on:
-  push:
-    branches: ["main"]
   pull_request:
     branches: ["main"]
 

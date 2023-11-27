@@ -2,6 +2,7 @@
 **/*.o
 **/__pycache__
 **/.vagrant
+**/plz-out
 
 assembly/x86/arithmetic
 assembly/x86/atomic

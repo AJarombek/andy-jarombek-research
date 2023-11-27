@@ -1,0 +1,1847 @@
+[
+   {
+      "date": "10/29/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 14.99,
+      "minutes": 41,
+      "seconds": 1,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/28/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 19.379999999999999,
+      "minutes": 58,
+      "seconds": 42,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/28/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 15.619999999999999,
+      "minutes": 43,
+      "seconds": 0,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/28/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 10.67,
+      "minutes": 29,
+      "seconds": 51,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/27/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 16.850000000000001,
+      "minutes": 55,
+      "seconds": 12,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 11.25,
+      "minutes": 34,
+      "seconds": 10,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 9.3900000000000006,
+      "minutes": 26,
+      "seconds": 50,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/26/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 32.579999999999998,
+      "minutes": 29,
+      "seconds": 5,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/25/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 32.43,
+      "minutes": 25,
+      "seconds": 14,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/24/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 12.529999999999999,
+      "minutes": 33,
+      "seconds": 40,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/24/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 14.09,
+      "minutes": 40,
+      "seconds": 18,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/23/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 20.100000000000001,
+      "minutes": 57,
+      "seconds": 48,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/23/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 20.640000000000001,
+      "minutes": 8,
+      "seconds": 27,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/23/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 10.449999999999999,
+      "minutes": 30,
+      "seconds": 14,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/22/2022",
+      "hours": 1,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 0,
+      "seconds": 0,
+      "type": "bike"
+   },
+   {
+      "date": "10/21/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 1,
+      "type": "bike"
+   },
+   {
+      "date": "10/20/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 30.239999999999998,
+      "minutes": 22,
+      "seconds": 48,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/19/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 14.119999999999999,
+      "minutes": 40,
+      "seconds": 46,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/19/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 16.149999999999999,
+      "minutes": 41,
+      "seconds": 51,
+      "type": "virtual bike"
+   },
+   {
+      "date": "10/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 8,
+      "seconds": 22,
+      "type": "core"
+   },
+   {
+      "date": "10/14/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2,
+      "minutes": 36,
+      "seconds": 26,
+      "type": "walk"
+   },
+   {
+      "date": "10/14/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.9099999999999999,
+      "minutes": 31,
+      "seconds": 4,
+      "type": "walk"
+   },
+   {
+      "date": "10/13/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 40,
+      "seconds": 55,
+      "type": "strength training"
+   },
+   {
+      "date": "10/13/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 18,
+      "seconds": 58,
+      "type": "core"
+   },
+   {
+      "date": "10/13/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 5.0199999999999996,
+      "minutes": 22,
+      "seconds": 36,
+      "type": "walk"
+   },
+   {
+      "date": "10/11/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 11,
+      "seconds": 32,
+      "type": "weight training"
+   },
+   {
+      "date": "10/11/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 43,
+      "seconds": 25,
+      "type": "strength training"
+   },
+   {
+      "date": "10/11/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 17,
+      "seconds": 24,
+      "type": "core"
+   },
+   {
+      "date": "10/11/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 4.96,
+      "minutes": 20,
+      "seconds": 1,
+      "type": "walk"
+   },
+   {
+      "date": "10/10/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.8500000000000001,
+      "minutes": 28,
+      "seconds": 39,
+      "type": "walk"
+   },
+   {
+      "date": "10/10/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.96,
+      "minutes": 31,
+      "seconds": 51,
+      "type": "walk"
+   },
+   {
+      "date": "10/10/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.1899999999999999,
+      "minutes": 18,
+      "seconds": 49,
+      "type": "walk"
+   },
+   {
+      "date": "10/10/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.25,
+      "minutes": 20,
+      "seconds": 31,
+      "type": "walk"
+   },
+   {
+      "date": "10/9/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 44,
+      "seconds": 8,
+      "type": "strength training"
+   },
+   {
+      "date": "10/9/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 5.2800000000000002,
+      "minutes": 21,
+      "seconds": 57,
+      "type": "walk"
+   },
+   {
+      "date": "10/8/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 6.6500000000000004,
+      "minutes": 34,
+      "seconds": 36,
+      "type": "bike"
+   },
+   {
+      "date": "10/8/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 17,
+      "seconds": 12,
+      "type": "core"
+   },
+   {
+      "date": "10/8/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 5.0099999999999998,
+      "minutes": 22,
+      "seconds": 51,
+      "type": "walk"
+   },
+   {
+      "date": "10/6/2022",
+      "hours": 2,
+      "location": "Sandy Springs, GA",
+      "miles": 7.9900000000000002,
+      "minutes": 11,
+      "seconds": 27,
+      "type": "walk"
+   },
+   {
+      "date": "10/6/2022",
+      "hours": 0,
+      "location": "Atlanta, GA",
+      "miles": 1.3899999999999999,
+      "minutes": 39,
+      "seconds": 45,
+      "type": "walk"
+   },
+   {
+      "date": "10/5/2022",
+      "hours": 0,
+      "location": "Sandy Springs, GA",
+      "miles": null,
+      "minutes": 11,
+      "seconds": 13,
+      "type": "strength training"
+   },
+   {
+      "date": "10/5/2022",
+      "hours": 0,
+      "location": "Sandy Springs, GA",
+      "miles": null,
+      "minutes": 16,
+      "seconds": 9,
+      "type": "core"
+   },
+   {
+      "date": "10/5/2022",
+      "hours": 0,
+      "location": "Sandy Springs, GA",
+      "miles": 2.0699999999999998,
+      "minutes": 35,
+      "seconds": 54,
+      "type": "walk"
+   },
+   {
+      "date": "10/4/2022",
+      "hours": 0,
+      "location": "Sandy Springs, GA",
+      "miles": 3.3700000000000001,
+      "minutes": 58,
+      "seconds": 18,
+      "type": "walk"
+   },
+   {
+      "date": "10/3/2022",
+      "hours": 0,
+      "location": "Sandy Springs, GA",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 4,
+      "type": "strength training"
+   },
+   {
+      "date": "10/3/2022",
+      "hours": 0,
+      "location": "Sandy Springs, GA",
+      "miles": null,
+      "minutes": 17,
+      "seconds": 38,
+      "type": "core"
+   },
+   {
+      "date": "10/3/2022",
+      "hours": 0,
+      "location": "Sandy Springs, GA",
+      "miles": 2.1299999999999999,
+      "minutes": 37,
+      "seconds": 48,
+      "type": "walk"
+   },
+   {
+      "date": "10/3/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.78,
+      "minutes": 31,
+      "seconds": 10,
+      "type": "walk"
+   },
+   {
+      "date": "10/3/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.75,
+      "minutes": 30,
+      "seconds": 11,
+      "type": "walk"
+   },
+   {
+      "date": "10/2/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 30,
+      "seconds": 7,
+      "type": "strength training"
+   },
+   {
+      "date": "10/2/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 6.6600000000000001,
+      "minutes": 32,
+      "seconds": 45,
+      "type": "bike"
+   },
+   {
+      "date": "10/2/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 3.1200000000000001,
+      "minutes": 55,
+      "seconds": 7,
+      "type": "walk"
+   },
+   {
+      "date": "10/2/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.1000000000000001,
+      "minutes": 17,
+      "seconds": 34,
+      "type": "run"
+   },
+   {
+      "date": "10/2/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 17,
+      "seconds": 22,
+      "type": "core"
+   },
+   {
+      "date": "10/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 7.25,
+      "minutes": 40,
+      "seconds": 24,
+      "type": "bike"
+   },
+   {
+      "date": "10/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.5800000000000001,
+      "minutes": 40,
+      "seconds": 17,
+      "type": "walk"
+   },
+   {
+      "date": "10/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 49,
+      "seconds": 50,
+      "type": "strength training"
+   },
+   {
+      "date": "10/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 29,
+      "type": "core"
+   },
+   {
+      "date": "10/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 3.3199999999999998,
+      "minutes": 58,
+      "seconds": 27,
+      "type": "walk"
+   },
+   {
+      "date": "9/30/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 49,
+      "seconds": 35,
+      "type": "strength training"
+   },
+   {
+      "date": "9/29/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 47,
+      "seconds": 26,
+      "type": "strength training"
+   },
+   {
+      "date": "9/29/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 18,
+      "seconds": 38,
+      "type": "core"
+   },
+   {
+      "date": "9/29/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 3.02,
+      "minutes": 22,
+      "seconds": 10,
+      "type": "run"
+   },
+   {
+      "date": "9/28/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 48,
+      "seconds": 7,
+      "type": "strength training"
+   },
+   {
+      "date": "9/27/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.90000000000000002,
+      "minutes": 13,
+      "seconds": 54,
+      "type": "walk"
+   },
+   {
+      "date": "9/27/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 51,
+      "seconds": 45,
+      "type": "strength training"
+   },
+   {
+      "date": "9/27/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 3.1000000000000001,
+      "minutes": 58,
+      "seconds": 13,
+      "type": "walk"
+   },
+   {
+      "date": "9/27/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.8999999999999999,
+      "minutes": 18,
+      "seconds": 3,
+      "type": "run"
+   },
+   {
+      "date": "9/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.5,
+      "minutes": 46,
+      "seconds": 38,
+      "type": "walk"
+   },
+   {
+      "date": "9/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.77,
+      "minutes": 31,
+      "seconds": 18,
+      "type": "walk"
+   },
+   {
+      "date": "9/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.79,
+      "minutes": 30,
+      "seconds": 6,
+      "type": "walk"
+   },
+   {
+      "date": "9/25/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.7,
+      "minutes": 32,
+      "seconds": 25,
+      "type": "walk"
+   },
+   {
+      "date": "9/25/2022",
+      "hours": 0,
+      "location": "Old Greenwich, CT",
+      "miles": 1.3600000000000001,
+      "minutes": 16,
+      "seconds": 57,
+      "type": "run"
+   },
+   {
+      "date": "9/25/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 36,
+      "seconds": 0,
+      "type": "strength training"
+   },
+   {
+      "date": "9/25/2022",
+      "hours": 2,
+      "location": "Stamford, CT",
+      "miles": 7.0800000000000001,
+      "minutes": 10,
+      "seconds": 17,
+      "type": "kayak"
+   },
+   {
+      "date": "9/25/2022",
+      "hours": 1,
+      "location": "Greenwich, CT",
+      "miles": 4.2300000000000004,
+      "minutes": 23,
+      "seconds": 35,
+      "type": "walk"
+   },
+   {
+      "date": "9/24/2022",
+      "hours": 1,
+      "location": "Greenwich, CT",
+      "miles": 3.7000000000000002,
+      "minutes": 12,
+      "seconds": 21,
+      "type": "walk"
+   },
+   {
+      "date": "9/24/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 17,
+      "seconds": 54,
+      "type": "core"
+   },
+   {
+      "date": "9/24/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 3.02,
+      "minutes": 52,
+      "seconds": 35,
+      "type": "kayak"
+   },
+   {
+      "date": "9/24/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 40,
+      "seconds": 14,
+      "type": "strength training"
+   },
+   {
+      "date": "9/24/2022",
+      "hours": 1,
+      "location": "Greenwich, CT",
+      "miles": 4.0599999999999996,
+      "minutes": 16,
+      "seconds": 20,
+      "type": "walk"
+   },
+   {
+      "date": "9/23/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 13,
+      "seconds": 17,
+      "type": "core"
+   },
+   {
+      "date": "9/23/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 30,
+      "seconds": 2,
+      "type": "bike"
+   },
+   {
+      "date": "9/23/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 41,
+      "seconds": 58,
+      "type": "strength training"
+   },
+   {
+      "date": "9/23/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 1.5,
+      "minutes": 30,
+      "seconds": 24,
+      "type": "walk"
+   },
+   {
+      "date": "9/22/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 1.1599999999999999,
+      "minutes": 22,
+      "seconds": 31,
+      "type": "walk"
+   },
+   {
+      "date": "9/22/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.74,
+      "minutes": 33,
+      "seconds": 16,
+      "type": "walk"
+   },
+   {
+      "date": "9/22/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 30,
+      "seconds": 0,
+      "type": "strength training"
+   },
+   {
+      "date": "9/21/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.85999999999999999,
+      "minutes": 14,
+      "seconds": 22,
+      "type": "walk"
+   },
+   {
+      "date": "9/21/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 35,
+      "seconds": 26,
+      "type": "strength training"
+   },
+   {
+      "date": "9/20/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 3.1200000000000001,
+      "minutes": 58,
+      "seconds": 24,
+      "type": "walk"
+   },
+   {
+      "date": "9/20/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.65000000000000002,
+      "minutes": 5,
+      "seconds": 52,
+      "type": "run"
+   },
+   {
+      "date": "9/20/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 36,
+      "seconds": 52,
+      "type": "strength training"
+   },
+   {
+      "date": "9/19/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.9299999999999999,
+      "minutes": 37,
+      "seconds": 7,
+      "type": "walk"
+   },
+   {
+      "date": "9/19/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.79,
+      "minutes": 32,
+      "seconds": 47,
+      "type": "walk"
+   },
+   {
+      "date": "9/19/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 25,
+      "seconds": 0,
+      "type": "strength training"
+   },
+   {
+      "date": "9/19/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.8600000000000001,
+      "minutes": 33,
+      "seconds": 24,
+      "type": "walk"
+   },
+   {
+      "date": "9/18/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.6899999999999999,
+      "minutes": 18,
+      "seconds": 32,
+      "type": "run"
+   },
+   {
+      "date": "9/18/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 7.25,
+      "minutes": 36,
+      "seconds": 42,
+      "type": "bike"
+   },
+   {
+      "date": "9/18/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 21,
+      "seconds": 25,
+      "type": "core"
+   },
+   {
+      "date": "9/18/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 36,
+      "seconds": 56,
+      "type": "strength training"
+   },
+   {
+      "date": "9/17/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.85999999999999999,
+      "minutes": 15,
+      "seconds": 34,
+      "type": "walk"
+   },
+   {
+      "date": "9/17/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 26,
+      "seconds": 56,
+      "type": "core"
+   },
+   {
+      "date": "9/17/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 35,
+      "seconds": 21,
+      "type": "strength training"
+   },
+   {
+      "date": "9/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 23,
+      "seconds": 37,
+      "type": "core"
+   },
+   {
+      "date": "9/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.24,
+      "minutes": 24,
+      "seconds": 42,
+      "type": "walk"
+   },
+   {
+      "date": "9/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 8.5500000000000007,
+      "minutes": 43,
+      "seconds": 13,
+      "type": "bike"
+   },
+   {
+      "date": "9/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.54000000000000004,
+      "minutes": 4,
+      "seconds": 45,
+      "type": "run"
+   },
+   {
+      "date": "9/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 35,
+      "seconds": 11,
+      "type": "strength training"
+   },
+   {
+      "date": "9/15/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.52,
+      "minutes": 27,
+      "seconds": 29,
+      "type": "walk"
+   },
+   {
+      "date": "9/15/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.45,
+      "minutes": 26,
+      "seconds": 36,
+      "type": "walk"
+   },
+   {
+      "date": "9/15/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 8.3200000000000003,
+      "minutes": 41,
+      "seconds": 31,
+      "type": "bike"
+   },
+   {
+      "date": "9/15/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 29,
+      "seconds": 42,
+      "type": "strength training"
+   },
+   {
+      "date": "9/14/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.8600000000000001,
+      "minutes": 35,
+      "seconds": 59,
+      "type": "walk"
+   },
+   {
+      "date": "9/14/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 28,
+      "seconds": 34,
+      "type": "strength training"
+   },
+   {
+      "date": "9/13/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 26,
+      "seconds": 45,
+      "type": "strength training"
+   },
+   {
+      "date": "9/12/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 29,
+      "seconds": 37,
+      "type": "strength training"
+   },
+   {
+      "date": "9/12/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.9199999999999999,
+      "minutes": 37,
+      "seconds": 49,
+      "type": "walk"
+   },
+   {
+      "date": "9/12/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.4399999999999999,
+      "minutes": 15,
+      "seconds": 41,
+      "type": "run"
+   },
+   {
+      "date": "9/12/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 21,
+      "seconds": 42,
+      "type": "strength training"
+   },
+   {
+      "date": "9/12/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.8100000000000001,
+      "minutes": 34,
+      "seconds": 30,
+      "type": "walk"
+   },
+   {
+      "date": "9/12/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.8,
+      "minutes": 33,
+      "seconds": 24,
+      "type": "walk"
+   },
+   {
+      "date": "9/11/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.6899999999999999,
+      "minutes": 32,
+      "seconds": 22,
+      "type": "walk"
+   },
+   {
+      "date": "9/11/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 0.82999999999999996,
+      "minutes": 20,
+      "seconds": 48,
+      "type": "walk"
+   },
+   {
+      "date": "9/11/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 16,
+      "seconds": 40,
+      "type": "core"
+   },
+   {
+      "date": "9/11/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 46,
+      "seconds": 54,
+      "type": "bike"
+   },
+   {
+      "date": "9/11/2022",
+      "hours": 1,
+      "location": "Stamford, CT",
+      "miles": 5.3700000000000001,
+      "minutes": 37,
+      "seconds": 40,
+      "type": "kayak"
+   },
+   {
+      "date": "9/11/2022",
+      "hours": 0,
+      "location": "Old Greenwich, CT",
+      "miles": 1.52,
+      "minutes": 15,
+      "seconds": 51,
+      "type": "run"
+   },
+   {
+      "date": "9/10/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 18,
+      "seconds": 15,
+      "type": "core"
+   },
+   {
+      "date": "9/10/2022",
+      "hours": 1,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 0,
+      "seconds": 0,
+      "type": "bike"
+   },
+   {
+      "date": "9/10/2022",
+      "hours": 0,
+      "location": "Old Greenwich, CT",
+      "miles": 0.14999999999999999,
+      "minutes": 11,
+      "seconds": 31,
+      "type": "swim"
+   },
+   {
+      "date": "9/10/2022",
+      "hours": 1,
+      "location": "Old Greenwich, CT",
+      "miles": 4.7400000000000002,
+      "minutes": 32,
+      "seconds": 0,
+      "type": "kayak"
+   },
+   {
+      "date": "9/9/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 27,
+      "seconds": 40,
+      "type": "strength training"
+   },
+   {
+      "date": "9/9/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 40,
+      "seconds": 1,
+      "type": "bike"
+   },
+   {
+      "date": "9/9/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 17,
+      "seconds": 5,
+      "type": "core"
+   },
+   {
+      "date": "9/9/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 3,
+      "minutes": 55,
+      "seconds": 38,
+      "type": "kayak"
+   },
+   {
+      "date": "9/9/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.75,
+      "minutes": 32,
+      "seconds": 1,
+      "type": "walk"
+   },
+   {
+      "date": "9/8/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 17,
+      "seconds": 14,
+      "type": "core"
+   },
+   {
+      "date": "9/8/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 29,
+      "seconds": 33,
+      "type": "strength training"
+   },
+   {
+      "date": "9/7/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 8.3699999999999992,
+      "minutes": 41,
+      "seconds": 17,
+      "type": "bike"
+   },
+   {
+      "date": "9/7/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 22,
+      "seconds": 24,
+      "type": "strength training"
+   },
+   {
+      "date": "9/7/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 7.9800000000000004,
+      "minutes": 39,
+      "seconds": 16,
+      "type": "bike"
+   },
+   {
+      "date": "9/7/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 1,
+      "type": "strength training"
+   },
+   {
+      "date": "9/6/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.89000000000000001,
+      "minutes": 15,
+      "seconds": 41,
+      "type": "walk"
+   },
+   {
+      "date": "9/6/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 29,
+      "seconds": 16,
+      "type": "strength training"
+   },
+   {
+      "date": "9/6/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.3399999999999999,
+      "minutes": 47,
+      "seconds": 35,
+      "type": "walk"
+   },
+   {
+      "date": "9/6/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.5700000000000001,
+      "minutes": 12,
+      "seconds": 36,
+      "type": "run"
+   },
+   {
+      "date": "9/6/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 18,
+      "seconds": 49,
+      "type": "core"
+   },
+   {
+      "date": "9/5/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.1600000000000001,
+      "minutes": 39,
+      "seconds": 37,
+      "type": "walk"
+   },
+   {
+      "date": "9/5/2022",
+      "hours": 1,
+      "location": "Old Greenwich, CT",
+      "miles": 5.04,
+      "minutes": 40,
+      "seconds": 15,
+      "type": "kayak"
+   },
+   {
+      "date": "9/5/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 1.75,
+      "minutes": 50,
+      "seconds": 11,
+      "type": "kayak"
+   },
+   {
+      "date": "9/5/2022",
+      "hours": 0,
+      "location": "Old Greenwich, CT",
+      "miles": 2.0499999999999998,
+      "minutes": 19,
+      "seconds": 50,
+      "type": "run"
+   },
+   {
+      "date": "9/4/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 18,
+      "seconds": 44,
+      "type": "core"
+   },
+   {
+      "date": "9/4/2022",
+      "hours": 1,
+      "location": "Old Greenwich, CT",
+      "miles": 3.9700000000000002,
+      "minutes": 16,
+      "seconds": 0,
+      "type": "kayak"
+   },
+   {
+      "date": "9/4/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 2.4300000000000002,
+      "minutes": 42,
+      "seconds": 13,
+      "type": "kayak"
+   },
+   {
+      "date": "9/4/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 27,
+      "seconds": 33,
+      "type": "strength training"
+   },
+   {
+      "date": "9/3/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 24,
+      "seconds": 21,
+      "type": "strength training"
+   },
+   {
+      "date": "9/3/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 30,
+      "seconds": 19,
+      "type": "bike"
+   },
+   {
+      "date": "9/3/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 16,
+      "seconds": 11,
+      "type": "core"
+   },
+   {
+      "date": "9/3/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": null,
+      "minutes": 31,
+      "seconds": 2,
+      "type": "strength training"
+   },
+   {
+      "date": "9/2/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 22,
+      "seconds": 5,
+      "type": "strength training"
+   },
+   {
+      "date": "9/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.87,
+      "minutes": 17,
+      "seconds": 26,
+      "type": "walk"
+   },
+   {
+      "date": "9/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.5700000000000001,
+      "minutes": 12,
+      "seconds": 47,
+      "type": "run"
+   },
+   {
+      "date": "9/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.6600000000000001,
+      "minutes": 18,
+      "seconds": 3,
+      "type": "run"
+   },
+   {
+      "date": "9/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 4.0199999999999996,
+      "minutes": 25,
+      "seconds": 17,
+      "type": "run"
+   },
+   {
+      "date": "9/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.1000000000000001,
+      "minutes": 15,
+      "seconds": 2,
+      "type": "run"
+   },
+   {
+      "date": "9/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 11,
+      "seconds": 1,
+      "type": "core"
+   },
+   {
+      "date": "9/1/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.94999999999999996,
+      "minutes": 16,
+      "seconds": 57,
+      "type": "walk"
+   },
+   {
+      "date": "8/31/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 25,
+      "seconds": 37,
+      "type": "weight training"
+   },
+   {
+      "date": "8/31/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 10.56,
+      "minutes": 23,
+      "seconds": 25,
+      "type": "run"
+   },
+   {
+      "date": "8/30/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.7799999999999998,
+      "minutes": 47,
+      "seconds": 4,
+      "type": "walk"
+   },
+   {
+      "date": "8/30/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 6.9000000000000004,
+      "minutes": 52,
+      "seconds": 3,
+      "type": "run"
+   },
+   {
+      "date": "8/30/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 21,
+      "seconds": 6,
+      "type": "core"
+   },
+   {
+      "date": "8/28/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 12.56,
+      "minutes": 30,
+      "seconds": 34,
+      "type": "run"
+   },
+   {
+      "date": "8/28/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 33,
+      "type": "weight training"
+   },
+   {
+      "date": "8/28/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 21,
+      "seconds": 3,
+      "type": "core"
+   },
+   {
+      "date": "8/27/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 8.2300000000000004,
+      "minutes": 1,
+      "seconds": 17,
+      "type": "run"
+   },
+   {
+      "date": "8/27/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 38,
+      "type": "core"
+   },
+   {
+      "date": "8/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 0.98999999999999999,
+      "minutes": 17,
+      "seconds": 49,
+      "type": "walk"
+   },
+   {
+      "date": "8/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 7.2300000000000004,
+      "minutes": 54,
+      "seconds": 22,
+      "type": "run"
+   },
+   {
+      "date": "8/26/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 21,
+      "type": "core"
+   },
+   {
+      "date": "8/25/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 8.3200000000000003,
+      "minutes": 0,
+      "seconds": 21,
+      "type": "run"
+   },
+   {
+      "date": "8/25/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 19,
+      "seconds": 25,
+      "type": "weight training"
+   },
+   {
+      "date": "8/25/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 20,
+      "seconds": 57,
+      "type": "core"
+   },
+   {
+      "date": "8/24/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 2.2999999999999998,
+      "minutes": 43,
+      "seconds": 52,
+      "type": "walk"
+   },
+   {
+      "date": "8/24/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 18,
+      "seconds": 16,
+      "type": "core"
+   },
+   {
+      "date": "8/23/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 8.3900000000000006,
+      "minutes": 59,
+      "seconds": 37,
+      "type": "run"
+   },
+   {
+      "date": "8/22/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.1100000000000001,
+      "minutes": 17,
+      "seconds": 28,
+      "type": "walk"
+   },
+   {
+      "date": "8/22/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 11.140000000000001,
+      "minutes": 23,
+      "seconds": 46,
+      "type": "run"
+   },
+   {
+      "date": "8/21/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.76,
+      "minutes": 32,
+      "seconds": 28,
+      "type": "walk"
+   },
+   {
+      "date": "8/21/2022",
+      "hours": 0,
+      "location": "Greenwich, CT",
+      "miles": 5.3399999999999999,
+      "minutes": 49,
+      "seconds": 1,
+      "type": "run"
+   },
+   {
+      "date": "8/20/2022",
+      "hours": 2,
+      "location": "Boston, MA",
+      "miles": 5,
+      "minutes": 0,
+      "seconds": 0,
+      "type": "walk"
+   },
+   {
+      "date": "8/20/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 3.3700000000000001,
+      "minutes": 24,
+      "seconds": 38,
+      "type": "run"
+   },
+   {
+      "date": "8/19/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 2.9900000000000002,
+      "minutes": 56,
+      "seconds": 43,
+      "type": "kayak"
+   },
+   {
+      "date": "8/19/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 8.3200000000000003,
+      "minutes": 59,
+      "seconds": 20,
+      "type": "run"
+   },
+   {
+      "date": "8/19/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 1.1799999999999999,
+      "minutes": 21,
+      "seconds": 44,
+      "type": "walk"
+   },
+   {
+      "date": "8/19/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.6499999999999999,
+      "minutes": 27,
+      "seconds": 41,
+      "type": "walk"
+   },
+   {
+      "date": "8/18/2022",
+      "hours": 1,
+      "location": "New York, NY",
+      "miles": 8.4299999999999997,
+      "minutes": 0,
+      "seconds": 40,
+      "type": "run"
+   },
+   {
+      "date": "8/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": null,
+      "minutes": 23,
+      "seconds": 11,
+      "type": "core"
+   },
+   {
+      "date": "8/16/2022",
+      "hours": 0,
+      "location": "Brooklyn, NY",
+      "miles": 0.94999999999999996,
+      "minutes": 20,
+      "seconds": 48,
+      "type": "walk"
+   },
+   {
+      "date": "8/16/2022",
+      "hours": 0,
+      "location": "Brooklyn, NY",
+      "miles": 0.78000000000000003,
+      "minutes": 14,
+      "seconds": 37,
+      "type": "walk"
+   },
+   {
+      "date": "8/16/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 6.46,
+      "minutes": 49,
+      "seconds": 44,
+      "type": "run"
+   },
+   {
+      "date": "8/15/2022",
+      "hours": 0,
+      "location": "New York, NY",
+      "miles": 1.72,
+      "minutes": 31,
+      "seconds": 44,
+      "type": "walk"
+   },
+   {
+      "date": "8/15/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 3.73,
+      "minutes": 27,
+      "seconds": 50,
+      "type": "run"
+   },
+   {
+      "date": "8/15/2022",
+      "hours": 0,
+      "location": "Riverside, CT",
+      "miles": 1.53,
+      "minutes": 25,
+      "seconds": 16,
+      "type": "kayak"
+   }
+]

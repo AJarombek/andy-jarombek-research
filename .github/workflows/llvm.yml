@@ -1,0 +1,41 @@
+# GitHub Action for running LLVM code samples.
+# Author: Andrew Jarombek
+# Date: 10/20/2022
+
+name: LLVM
+
+on:
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  llvm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container: ajarombek/data-analytics-prototypes-llvm:latest
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - run: echo "Checked out branch '${{ github.ref }}' of the ${{ github.repository }} repository"
+
+      - name: Run LLVM Basics Code Sample
+        working-directory: ./llvm
+        run: |
+          plz --version
+          plz build //... -i llvm -vvv
+        env:
+          HOME: /root
+
+      - name: LLVM Code Sample Logs
+        working-directory: ./llvm
+        run: >
+          LOG_DIR=plz-out/gen && 
+          cat $LOG_DIR/llvm.log && 
+          cat $LOG_DIR/llvm_hello_world.log && 
+          cat $LOG_DIR/llvm_basics.log && 
+          cat $LOG_DIR/llvm_arithmetic.log

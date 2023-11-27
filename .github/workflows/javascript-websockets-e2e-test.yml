@@ -1,8 +1,6 @@
 name: JavaScript Websockets E2E Test with Puppeteer
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
