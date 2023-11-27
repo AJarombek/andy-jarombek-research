@@ -29,7 +29,7 @@ genrule(
 
 genrule(
     name = "llvm_arithmetic",
-    cmd = [f"bash {path}/run_arithmetic.sh {path} > llvm_arithmetic.log"],
+    cmd = [f"bash {path}/run_arithmetic.sh > llvm_arithmetic.log"],
     srcs = ["arithmetic.ll", "run_arithmetic.sh"],
     labels = ["llvm"],
     outs = ["llvm_arithmetic.log"]

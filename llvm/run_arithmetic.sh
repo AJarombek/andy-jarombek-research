@@ -4,5 +4,5 @@
 # Author: Andrew Jarombek
 # Date: 10/18/2022
 
-lli "$1"/arithmetic.ll
-printf "2 + 5 = %s \n" $?
+lli arithmetic.ll
+printf "2 + 3 = %s \n" $?
