@@ -25,7 +25,11 @@ jobs:
 
       - name: Run LLVM Basics Code Sample
         working-directory: ./llvm
-        run: plz build //... -i llvm -vvv
+        run: |
+          plz --version
+          plz build //... -i llvm -vvv
+        env:
+          HOME: /root
 
       - name: LLVM Code Sample Logs
         working-directory: ./llvm
