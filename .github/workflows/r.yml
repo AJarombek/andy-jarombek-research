@@ -1,0 +1,35 @@
+# GitHub Action for running R code samples.
+# Author: Andrew Jarombek
+# Date: 10/17/2022
+
+name: R
+
+on:
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  numpy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container: ajarombek/data-analytics-prototypes-r:latest
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - run: echo "Checked out branch '${{ github.ref }}' of the ${{ github.repository }} repository"
+
+      - name: Run R Code Samples
+        working-directory: ./r
+        run: plz build //... -i r -vvv
+
+      - name: R Code Logs
+        working-directory: ./r
+        run: >
+          LOG_DIR=plz-out/gen/r && 
+          cat $LOG_DIR/r_basics.log && 
+          cat $LOG_DIR/r.log

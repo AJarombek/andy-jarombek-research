@@ -1,0 +1,28 @@
+# Poetry configuration for a Python virtual environment used to develop Airflow DAGs.
+# Author: Andrew Jarombek
+# Date: 10/29/2021
+
+[tool.poetry]
+name = "airflow-local"
+version = "0.1.0"
+description = "Airflow Local Development Setup"
+authors = ["Andrew Jarombek <andrew@jarombek.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+apache-airflow = "^2.2.0"
+apache-airflow-providers-postgres = "^2.3.0"
+cryptography = "^35.0.0"
+pandas = "^1.3.4"
+
+[tool.poetry.dev-dependencies]
+black = "22.10.0"
+pytest = "7.1.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+skip-string-normalization = true
+target-version = ["py38"]

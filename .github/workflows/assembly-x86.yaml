@@ -1,9 +1,6 @@
 name: NASM x86 Assembly
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main

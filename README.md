@@ -26,19 +26,33 @@ act -W '.github/workflows/go-tests.yml'
 
 ### Files
 
-| Filename     | Description                                 |
-|--------------|---------------------------------------------|
-| `.github`    | GitHub Actions for CI/CD pipelines.         |
-| `assembly`   | Various dialects of assembly language.      |
-| `c`          | C programming.                              |
-| `cpp`        | C++ programming.                            |
-| `databricks` | Databricks platform programming with Spark. |
-| `go`         | Go programming.                             |
-| `javascript` | JavaScript programming.                     |
-| `python`     | Python programming.                         |
-| `react`      | React.js front-end applications.            |
+| Filename           | Description                                 |
+|--------------------|---------------------------------------------|
+| `.github`          | GitHub Actions for CI/CD pipelines.         |
+| `airflow`          | Airflow DAGs.                               |
+| `assembly`         | Various dialects of assembly language.      |
+| `c`                | C programming.                              |
+| `cpp`              | C++ programming.                            |
+| `data-analytics`   | Data Analytics engineering.                 |
+| `databricks`       | Databricks platform programming with Spark. |
+| `fortran`          | Fortran programming.                        |
+| `go`               | Go programming.                             |
+| `javascript`       | JavaScript programming.                     |
+| `llvm`             | LLVM IR programming.                        |
+| `machine-learning` | Machine learning engineering.               |
+| `python`           | Python programming.                         |
+| `r`                | R programming.                              |
+| `react`            | React.js front-end applications.            |
 
 ### Version History
+
+**[v0.0.9](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.9) - Data Analytics & Machine Learning**
+
+> Release Date: November 26th, 2023
+
+* Port over Machine Learning programs from the [machine-learning-programs](https://github.com/AJarombek/machine-learning-programs/) 
+repository and Data Analytics programs from the [data-analytics-prototypes](https://github.com/AJarombek/data-analytics-prototypes/) 
+repository.
 
 **[v0.0.8](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.8) - Databricks & Apollo Programs**
 

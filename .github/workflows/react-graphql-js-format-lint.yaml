@@ -1,9 +1,6 @@
 name: React GraphQL JS Format and Lint
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
