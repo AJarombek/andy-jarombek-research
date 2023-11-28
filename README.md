@@ -38,6 +38,7 @@ act -W '.github/workflows/go-tests.yml'
 | `fortran`          | Fortran programming.                        |
 | `go`               | Go programming.                             |
 | `javascript`       | JavaScript programming.                     |
+| `linux`            | Linux system programming.                   |
 | `llvm`             | LLVM IR programming.                        |
 | `machine-learning` | Machine learning engineering.               |
 | `python`           | Python programming.                         |
@@ -45,6 +46,13 @@ act -W '.github/workflows/go-tests.yml'
 | `react`            | React.js front-end applications.            |
 
 ### Version History
+
+**[v0.0.10](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.10) - Linux System Programs**
+
+> Release Date: November 27th, 2023
+
+* Port over Linux System programs from the [system-programming-prototypes](https://github.com/AJarombek/system-programming-prototypes/) 
+repository.
 
 **[v0.0.9](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.9) - Data Analytics & Machine Learning**
 
