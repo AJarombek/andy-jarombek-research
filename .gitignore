@@ -3,6 +3,7 @@
 **/__pycache__
 **/.vagrant
 **/plz-out
+**/.terraform
 
 assembly/x86/arithmetic
 assembly/x86/atomic

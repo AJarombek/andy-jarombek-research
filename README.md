@@ -31,6 +31,7 @@ act -W '.github/workflows/go-tests.yml'
 | `.github`          | GitHub Actions for CI/CD pipelines.         |
 | `airflow`          | Airflow DAGs.                               |
 | `assembly`         | Various dialects of assembly language.      |
+| `aws`              | AWS cloud infrastructure.                   |
 | `c`                | C programming.                              |
 | `cpp`              | C++ programming.                            |
 | `data-analytics`   | Data Analytics engineering.                 |
@@ -44,6 +45,7 @@ act -W '.github/workflows/go-tests.yml'
 | `python`           | Python programming.                         |
 | `r`                | R programming.                              |
 | `react`            | React.js front-end applications.            |
+| `splunk`           | Splunk enterprise queries and dashboards.   |
 
 ### Version History
 
