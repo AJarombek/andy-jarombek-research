@@ -9,7 +9,7 @@ from http_requests import read_file_stream
 from http_requests import read_file_range_header
 from http_requests import read_zipfile
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Datasets from https://data.gov/
 
     # https://dashboard.data.gov/offices/detail/49019/2021-12-31

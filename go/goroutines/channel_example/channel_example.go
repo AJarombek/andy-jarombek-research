@@ -8,11 +8,16 @@ package main
 
 import (
 	"fmt"
+	"sync"
 )
 
-func double(out chan int, in chan int) {
+func double(out chan int, in chan int, wg *sync.WaitGroup) {
+	defer wg.Done()
 	for {
-		value := <-in
+		value, ok := <-in
+		if !ok {
+			return // Channel closed, exit the goroutine
+		}
 		result := value * 2
 
 		fmt.Println("double")
@@ -20,9 +25,13 @@ func double(out chan int, in chan int) {
 	}
 }
 
-func doubleV2(out chan<- int, in <-chan int) {
+func doubleV2(out chan<- int, in <-chan int, wg *sync.WaitGroup) {
+	defer wg.Done()
 	for {
-		value := <-in
+		value, ok := <-in
+		if !ok {
+			return // Channel closed, exit the goroutine
+		}
 		result := value * 2
 
 		fmt.Println("doubleV2")
@@ -31,51 +40,57 @@ func doubleV2(out chan<- int, in <-chan int) {
 }
 
 func main() {
-	out := make(chan int)
-	in := make(chan int)
-	go double(out, in)
+	var wg sync.WaitGroup
 
-	in <- 2
-	result := <-out
+	out1 := make(chan int)
+	in1 := make(chan int)
+	wg.Add(1)
+	go double(out1, in1, &wg)
+
+	in1 <- 2
+	result := <-out1
 	fmt.Printf("Double 2 = %d\n", result) // Double 2 = 4
 
-	in <- 5
-	result = <-out
+	in1 <- 5
+	result = <-out1
 	fmt.Printf("Double 5 = %d\n", result) // Double 5 = 10
 
-	close(out)
-	close(in)
+	close(in1)
+	wg.Wait() // Wait for goroutine to finish before closing channels
+	close(out1)
 
-	out = make(chan int)
-	in = make(chan int)
+	out2 := make(chan int)
+	in2 := make(chan int)
+	wg.Add(1)
+	go doubleV2(out2, in2, &wg)
 
-	go doubleV2(out, in)
-
-	in <- 2
-	result = <-out
+	in2 <- 2
+	result = <-out2
 	fmt.Printf("Double 2 = %d\n", result) // Double 2 = 4
 
-	in <- 5
-	result = <-out
+	in2 <- 5
+	result = <-out2
 	fmt.Printf("Double 5 = %d\n", result) // Double 5 = 10
 
-	close(out)
-	close(in)
+	close(in2)
+	wg.Wait() // Wait for goroutine to finish before closing channels
+	close(out2)
 
-	out = make(chan int, 2)
-	in = make(chan int, 2)
+	out3 := make(chan int, 2)
+	in3 := make(chan int, 2)
+	wg.Add(1)
+	go double(out3, in3, &wg)
 
-	go double(out, in)
+	in3 <- 2
+	in3 <- 5
 
-	in <- 2
-	in <- 5
-	
-	result = <-out
+	result = <-out3
 	fmt.Printf("Double 2 = %d\n", result) // Double 2 = 4
 
-	result = <-out
+	result = <-out3
 	fmt.Printf("Double 5 = %d\n", result) // Double 5 = 10
 
-	close(out)
-	close(in)
+	close(in3)
+	wg.Wait() // Wait for goroutine to finish before closing channels
+	close(out3)
 }

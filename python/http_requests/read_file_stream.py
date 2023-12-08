@@ -16,7 +16,7 @@ def read(source: str, destination: str) -> None:
     logging.info(f"making request to {source}")
 
     res = requests.get(source, stream=True, timeout=120)
-    size = res.headers.get('Content-Length')
+    size = res.headers.get("Content-Length")
 
     with open(f"{destination}/{filename}", "wb") as f:
         logging.info(f"saving request data to {filename}")

@@ -1,0 +1,18 @@
+# Dependencies and environment for the employee API.
+# Author: Andrew Jarombek
+# Date: 5/7/2022
+
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = ">=2.1.2"
+sqlalchemy = ">=1.4.36"
+uwsgi = ">=2.0.19.1"
+
+[requires]
+python_version = "3.8"

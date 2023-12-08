@@ -16,7 +16,7 @@ def double():
         yield result_value
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     double_coroutine = double()
 
     next(double_coroutine)

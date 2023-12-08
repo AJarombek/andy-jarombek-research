@@ -30,14 +30,3 @@ jobs:
         with:
           options: "--check"
           src: "python"
-
-      - name: Install Poetry, Pylint, and project dependencies
-        working-directory: ./python
-        run: |
-          pip install poetry
-          poetry config virtualenvs.create false
-          poetry install
-
-      - name: Pylint code analysis
-        working-directory: ./python
-        run: pylint $(git ls-files '*.py')

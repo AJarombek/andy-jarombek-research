@@ -1,0 +1,11 @@
+# Docker Compose configuration for an employee API.
+# Author: Andrew Jarombek
+# Date: 5/7/2022
+
+version: '3'
+services:
+  employee-api-python:
+    build:
+      context: .
+    ports:
+      - ${PORT}:5000

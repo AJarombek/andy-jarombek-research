@@ -2,36 +2,6 @@
 
 Python programming code, tested and run on Docker containers.
 
-### Commands
-
-**Local Coding Environment Setup**
-
-```bash
-# One time Poetry install
-pip3 install poetry
-
-# Start the virtual environment and install the dependencies
-poetry shell
-poetry install
-
-# Update Dependencies
-poetry lock
-poetry install
-```
-
-**Format Code**
-
-```bash
-black .
-```
-
-**Lint Code**
-
-```bash
-pylint coroutines
-pylint http_requests
-```
-
 ### Directories
 
 | Directory Name   | Description                                                                    |

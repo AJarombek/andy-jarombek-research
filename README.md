@@ -31,6 +31,7 @@ act -W '.github/workflows/go-tests.yml'
 | `.github`          | GitHub Actions for CI/CD pipelines.         |
 | `airflow`          | Airflow DAGs.                               |
 | `assembly`         | Various dialects of assembly language.      |
+| `aws`              | AWS cloud infrastructure.                   |
 | `c`                | C programming.                              |
 | `cpp`              | C++ programming.                            |
 | `data-analytics`   | Data Analytics engineering.                 |
@@ -44,8 +45,19 @@ act -W '.github/workflows/go-tests.yml'
 | `python`           | Python programming.                         |
 | `r`                | R programming.                              |
 | `react`            | React.js front-end applications.            |
+| `splunk`           | Splunk enterprise queries and dashboards.   |
 
 ### Version History
+
+**[v0.0.11](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.11) - DevOps & SQLite Programs**
+
+> Release Date: December 7th, 2023
+
+* Port over DevOps programs from the [devops-prototypes](https://github.com/AJarombek/devops-prototypes/) 
+repository and SQLite API programs from the [go-python-sqlite-api-example](https://github.com/AJarombek/go-python-sqlite-api-example/) 
+repository.
+* Refactor Python Lint & Format GitHub Actions
+* GitHub Action to Commit Formatting Changes
 
 **[v0.0.10](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.10) - Linux System Programs**
 
