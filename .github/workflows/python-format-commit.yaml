@@ -29,17 +29,8 @@ jobs:
           black python
 
       - name: Commit and Push Formatting Changes
-        run: |
-          git config --global --add safe.directory $(realpath .)
-          git config user.email "andrew@jarombek.com"
-          git config user.name "Andrew Jarombek"
-          git add .
-          
-          if [[ -n $(git status -s) ]]; then
-            git commit -m "Format Python Code with Black"
-            git push
-            echo "Changes committed and pushed to the remote repository."
-          else
-            echo "No local changes to commit and push."
-          fi
-        shell: bash
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Andrew Jarombek
+          author_email: andrew@jarombek.com
+          message: 'Format Python Code with Black'
