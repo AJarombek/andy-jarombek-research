@@ -1,0 +1,42 @@
+# GitHub Action for performing Python Linting
+# Author: Andrew Jarombek
+# Date: 12/7/2023
+
+name: Python Linting
+
+on:
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  pylint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        directory:
+          - "coroutines"
+          - "http_requests"
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Install Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install Poetry, Pylint, and project dependencies
+        working-directory: ./python/${{ matrix.directory }}
+        run: |
+          pip install poetry
+          poetry config virtualenvs.create false
+          poetry install
+
+      - name: Pylint code analysis
+        working-directory: ./python/${{ matrix.directory }}
+        run: pylint $(git ls-files '*.py')
