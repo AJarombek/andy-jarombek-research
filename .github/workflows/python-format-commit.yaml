@@ -28,6 +28,7 @@ jobs:
           pip install black
           black python
 
+      # For this to work, set read and write permissions for actions in the repository settings.
       - name: Commit and Push Formatting Changes
         run: |
           git config --global --add safe.directory $(realpath .)
