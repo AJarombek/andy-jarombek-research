@@ -24,9 +24,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
 
-      - name: Black formatting dry run
+      - name: Black formatting
         uses: psf/black@stable
         with:
+          options: "--diff"
           src: "python"
 
       - name: Commit and Push Formatting Changes
