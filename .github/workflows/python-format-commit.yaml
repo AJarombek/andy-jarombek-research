@@ -10,8 +10,6 @@ on:
 jobs:
   format_commit:
     runs-on: ubuntu-latest
-    container: node:18.16.1
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -44,3 +42,4 @@ jobs:
           else
             echo "No local changes to commit and push."
           fi
+        shell: bash
