@@ -37,7 +37,7 @@ jobs:
           
           if [[ -n $(git status -s) ]]; then
             git commit -m "Format Python Code with Black"
-            git push https://AJarombek:${{ secrets.GIT_PAT }}@${{ github.repository }}.git
+            git push https://AJarombek:${{ secrets.GIT_PAT }}@github.com/AJarombek/andy-jarombek-research.git
             echo "Changes committed and pushed to the remote repository."
           else
             echo "No local changes to commit and push."
