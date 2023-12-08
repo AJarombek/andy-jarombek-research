@@ -34,8 +34,17 @@ jobs:
         run: terraform fmt
 
       - name: Commit and Push Formatting Changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: Andrew Jarombek
-          author_email: andrew@jarombek.com
-          message: 'Format JS Code with Prettier'
+        run: |
+          git config --global --add safe.directory $(realpath .)
+          git config user.email "andrew@jarombek.com"
+          git config user.name "Andrew Jarombek"
+          git add .
+          
+          if [[ -n $(git status -s) ]]; then
+            git commit -m "Format JS Code with Prettier"
+            git push
+            echo "Changes committed and pushed to the remote repository."
+          else
+            echo "No local changes to commit and push."
+          fi
+        shell: bash
