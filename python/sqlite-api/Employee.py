@@ -11,7 +11,7 @@ Base = declarative_base()
 
 
 class Employee(Base):
-    __tablename__ = 'employees'
+    __tablename__ = "employees"
 
     id = Column(INTEGER, primary_key=True)
     gender = Column(TEXT, nullable=False)

@@ -15,15 +15,14 @@ from Employee import Employee
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route("/", methods=["GET"])
 def entry():
     return jsonify({})
 
 
-@app.route('/employees', methods=['GET'])
+@app.route("/employees", methods=["GET"])
 def employees():
-
-    engine = create_engine('sqlite:////src/employees.db')
+    engine = create_engine("sqlite:////src/employees.db")
 
     Session = sessionmaker()
     Session.configure(bind=engine)
@@ -32,4 +31,6 @@ def employees():
     all_employees: List[Employee] = session.query(Employee).all()
 
     session.close()
-    return jsonify([{'id': employee.id, 'gender': employee.gender} for employee in all_employees])
+    return jsonify(
+        [{"id": employee.id, "gender": employee.gender} for employee in all_employees]
+    )

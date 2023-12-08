@@ -17,8 +17,8 @@ def read(source: str, destination: str) -> None:
 
     res = requests.get(source, stream=True, timeout=120)
 
-    total_size = res.headers.get('Content-Length')
-    range_enabled = res.headers.get('Accept-Ranges') == 'bytes'
+    total_size = res.headers.get("Content-Length")
+    range_enabled = res.headers.get("Accept-Ranges") == "bytes"
 
     total_size = 0 if total_size is None else int(total_size)
     formatted_total_size = format_file_sizes(total_size)
@@ -34,7 +34,7 @@ def read(source: str, destination: str) -> None:
             index = 0
 
             while progress < total_size:
-                headers = {'Range': f'bytes={progress}-{progress + range_length}'}
+                headers = {"Range": f"bytes={progress}-{progress + range_length}"}
                 res = requests.get(source, headers=headers, timeout=120)
                 f.write(res.content)
 

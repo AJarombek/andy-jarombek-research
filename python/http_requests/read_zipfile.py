@@ -18,7 +18,7 @@ def read(source: str, destination: str) -> None:
 
     res = requests.get(source, stream=True, timeout=120)
 
-    with zipfile.ZipFile(BytesIO(res.content), mode='r') as archive:
+    with zipfile.ZipFile(BytesIO(res.content), mode="r") as archive:
         for filename in archive.namelist():
             logging.info(f"Extracting file from zip: {filename}")
 
