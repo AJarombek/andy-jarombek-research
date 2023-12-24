@@ -39,9 +39,11 @@ act -W '.github/workflows/go-tests.yml'
 | `fortran`          | Fortran programming.                        |
 | `go`               | Go programming.                             |
 | `javascript`       | JavaScript programming.                     |
+| `jenkins`          | Jenkins CI/CD platform setup.               |
 | `linux`            | Linux system programming.                   |
 | `llvm`             | LLVM IR programming.                        |
 | `machine-learning` | Machine learning engineering.               |
+| `mojo`             | Mojo programming.                           |
 | `python`           | Python programming.                         |
 | `r`                | R programming.                              |
 | `react`            | React.js front-end applications.            |
