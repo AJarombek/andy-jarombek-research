@@ -1,5 +1,6 @@
 app/coverage/*
 app/node_modules/*
+infra/assets/*
 dist
 .idea
 .idea/vcs.xml
