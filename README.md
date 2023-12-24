@@ -51,6 +51,14 @@ act -W '.github/workflows/go-tests.yml'
 
 ### Version History
 
+**[v0.0.12](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.12) - Mojo Basics, Jenkins & React 16.3 Infrastructure**
+
+> Release Date: December 23rd, 2023
+
+* Mojo programming basics
+* Jenkins Kubernetes infrastructure
+* React 16.3 Application infrastructure
+
 **[v0.0.11](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.11) - DevOps & SQLite Programs**
 
 > Release Date: December 7th, 2023
