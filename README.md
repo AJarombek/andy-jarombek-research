@@ -40,15 +40,25 @@ act -W '.github/workflows/go-tests.yml'
 | `go`               | Go programming.                             |
 | `htmx`             | HTMX front-end applications.                |
 | `javascript`       | JavaScript programming.                     |
+| `jenkins`          | Jenkins CI/CD platform setup.               |
 | `linux`            | Linux system programming.                   |
 | `llvm`             | LLVM IR programming.                        |
 | `machine-learning` | Machine learning engineering.               |
+| `mojo`             | Mojo programming.                           |
 | `python`           | Python programming.                         |
 | `r`                | R programming.                              |
 | `react`            | React.js front-end applications.            |
 | `splunk`           | Splunk enterprise queries and dashboards.   |
 
 ### Version History
+
+**[v0.0.12](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.12) - Mojo Basics, Jenkins & React 16.3 Infrastructure**
+
+> Release Date: December 23rd, 2023
+
+* Mojo programming basics
+* Jenkins Kubernetes infrastructure
+* React 16.3 Application infrastructure
 
 **[v0.0.11](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.11) - DevOps & SQLite Programs**
 

@@ -9,6 +9,9 @@ assembly/x86/arithmetic
 assembly/x86/atomic
 assembly/x86/guess_number
 
+jenkins/docker/jenkins.yaml
+jenkins/docker/env
+
 python/http_requests/dest/memory
 python/http_requests/dest/range_header
 python/http_requests/dest/stream
