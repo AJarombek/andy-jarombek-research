@@ -1,0 +1,26 @@
+# Poetry configuration for a Python virtual environment.
+# Author: Andrew Jarombek
+# Date: 12/27/2023
+
+[tool.poetry]
+name = "jarombek-gardens"
+version = "0.1.0"
+description = "Jarombek Gardens Website"
+authors = ["Andrew Jarombek <andrew@jarombek.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "0.108.0"
+jinja2 = "3.1.2"
+uvicorn = "0.24.0.post1"
+
+[tool.poetry.dev-dependencies]
+black = "23.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+skip-string-normalization = true
+target-version = ["py311"]
