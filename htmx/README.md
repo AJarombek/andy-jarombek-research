@@ -5,10 +5,12 @@ Hypermedia Driven Application (HDA) architecture.
 
 ### Commands
 
-**Run the application locally**
-
 ```bash
+# Install Python dependencies
+make install
 
+# Run the application locally
+make run
 ```
 
 ### Resources

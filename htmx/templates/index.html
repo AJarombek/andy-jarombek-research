@@ -6,7 +6,7 @@
   <meta name="keywords" content="Christmas, Tree, Riverside, Greenwich, Connecticut, CT, Decorated, Wreath, Roping, Family, Business">
   <meta name="author" content="Andrew Jarombek">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="/static/styles.css">
   <title>Jarombek Gardens Christmas Trees</title>
   <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
 </head>
@@ -15,9 +15,9 @@
   <h1>Jarombek Gardens Christmas Trees</h1>
   <h5><i>Family Run Since 1975</i></h5>
 </div>
-<div id="location-section" hx-get="/api/location" hx-trigger="load" hx-swap="outerHTML">
+<div id="location-section" hx-get="/location" hx-trigger="load" hx-swap="outerHTML">
 </div>
-<div id="inventory-section" hx-get="/api/inventory" hx-trigger="load" hx-swap="outerHTML">
+<div id="inventory-section" hx-get="/inventory" hx-trigger="load" hx-swap="outerHTML">
 </div>
 </body>
 </html>
