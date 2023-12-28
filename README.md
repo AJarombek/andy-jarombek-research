@@ -38,6 +38,7 @@ act -W '.github/workflows/go-tests.yml'
 | `databricks`       | Databricks platform programming with Spark. |
 | `fortran`          | Fortran programming.                        |
 | `go`               | Go programming.                             |
+| `htmx`             | HTMX front-end applications.                |
 | `javascript`       | JavaScript programming.                     |
 | `jenkins`          | Jenkins CI/CD platform setup.               |
 | `linux`            | Linux system programming.                   |
