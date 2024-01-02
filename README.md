@@ -26,29 +26,30 @@ act -W '.github/workflows/go-tests.yml'
 
 ### Files
 
-| Filename           | Description                                 |
-|--------------------|---------------------------------------------|
-| `.github`          | GitHub Actions for CI/CD pipelines.         |
-| `airflow`          | Airflow DAGs.                               |
-| `assembly`         | Various dialects of assembly language.      |
-| `aws`              | AWS cloud infrastructure.                   |
-| `c`                | C programming.                              |
-| `cpp`              | C++ programming.                            |
-| `data-analytics`   | Data Analytics engineering.                 |
-| `databricks`       | Databricks platform programming with Spark. |
-| `fortran`          | Fortran programming.                        |
-| `go`               | Go programming.                             |
-| `htmx`             | HTMX front-end applications.                |
-| `javascript`       | JavaScript programming.                     |
-| `jenkins`          | Jenkins CI/CD platform setup.               |
-| `linux`            | Linux system programming.                   |
-| `llvm`             | LLVM IR programming.                        |
-| `machine-learning` | Machine learning engineering.               |
-| `mojo`             | Mojo programming.                           |
-| `python`           | Python programming.                         |
-| `r`                | R programming.                              |
-| `react`            | React.js front-end applications.            |
-| `splunk`           | Splunk enterprise queries and dashboards.   |
+| Filename           | Description                                     |
+|--------------------|-------------------------------------------------|
+| `.github`          | GitHub Actions for CI/CD pipelines.             |
+| `ai`               | Artificial intelligence and prompt engineering. |
+| `airflow`          | Airflow DAGs.                                   |
+| `assembly`         | Various dialects of assembly language.          |
+| `aws`              | AWS cloud infrastructure.                       |
+| `c`                | C programming.                                  |
+| `cpp`              | C++ programming.                                |
+| `data-analytics`   | Data Analytics engineering.                     |
+| `databricks`       | Databricks platform programming with Spark.     |
+| `fortran`          | Fortran programming.                            |
+| `go`               | Go programming.                                 |
+| `htmx`             | HTMX front-end applications.                    |
+| `javascript`       | JavaScript programming.                         |
+| `jenkins`          | Jenkins CI/CD platform setup.                   |
+| `linux`            | Linux system programming.                       |
+| `llvm`             | LLVM IR programming.                            |
+| `machine-learning` | Machine learning engineering.                   |
+| `mojo`             | Mojo programming.                               |
+| `python`           | Python programming.                             |
+| `r`                | R programming.                                  |
+| `react`            | React.js front-end applications.                |
+| `splunk`           | Splunk enterprise queries and dashboards.       |
 
 ### Version History
 
