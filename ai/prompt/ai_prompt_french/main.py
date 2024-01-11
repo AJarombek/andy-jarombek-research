@@ -21,7 +21,8 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 load_dotenv()
 
-if __name__ == "__main__":
+
+def main():
     # Requires an OpenAI API key in the 'OPENAI_API_KEY' environment variable to run
     # API requires a paid subscription
     chat = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name=OPENAI_MODEL)

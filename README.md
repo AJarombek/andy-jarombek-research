@@ -53,6 +53,12 @@ act -W '.github/workflows/go-tests.yml'
 
 ### Version History
 
+**[v0.0.13](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.13) - AI Prompt Engineering Basics**
+
+> Release Date: January 11th, 2024
+
+* AI Prompt engineering "French Chatbot" application that uses OpenAI and LangChain.
+
 **[v0.0.12](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.12) - Mojo Basics, Jenkins & React 16.3 Infrastructure**
 
 > Release Date: December 23rd, 2023

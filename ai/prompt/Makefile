@@ -9,3 +9,6 @@ spell_check:
 
 format:
 	poetry run ruff format
+
+run-chatbot:
+	@export OPENAI_API_KEY=$(api_key) && poetry run run-main

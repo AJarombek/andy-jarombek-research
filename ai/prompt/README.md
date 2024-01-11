@@ -2,6 +2,14 @@
 
 AI Prompt engineering code.
 
+### Commands
+
+**Run the application locally**
+
+```bash
+make run-chatbot api_key=<openai_api_key>
+```
+
 ### Files
 
 | Filename         | Description                                                   |
