@@ -9,17 +9,18 @@ description = "AI Prompt Engineering"
 authors = ["Andrew Jarombek <andrew@jarombek.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-langchain = "~0.0.329"
-openai = "0.28.1"
+python = "^3.10"
+langchain = "0.1.0"
+openai = "1.7.1"
 requests = "2.31.0"
-python-dotenv = "^1.0.0"
-langchain-cli = "^0.0.19"
+python-dotenv = "1.0.0"
+langchain-cli = "0.0.20"
 
 [tool.poetry.group.dev.dependencies]
-black = "23.10.1"
+black = "^23.10.1"
 ruff = "^0.1.7"
 codespell = "^2.2.6"
+tomli = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
