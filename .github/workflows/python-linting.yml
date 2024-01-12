@@ -6,7 +6,10 @@ name: Python Linting
 
 on:
   pull_request:
-    branches: ["main"]
+    branches:
+      - 'main'
+    paths:
+      - 'python/**.py'
 
   workflow_dispatch:
 

@@ -1,0 +1,45 @@
+# GitHub Action for performing Linting, Formatting, and Spell Checking for AI Prompt Engineering code.
+# Author: Andrew Jarombek
+# Date: 1/12/2024
+
+name: AI Prompt Engineering
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - 'ai/prompt/*'
+
+  workflow_dispatch:
+
+jobs:
+  ai_prompt_engineering:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Install Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        working-directory: ./ai/prompt
+        run: make install
+
+      - name: Lint Python
+        working-directory: ./ai/prompt
+        run: make lint
+
+      - name: Format Python
+        working-directory: ./ai/prompt
+        run: make format
+
+      - name: Spell Check Python
+        working-directory: ./ai/prompt
+        run: make spell_check
