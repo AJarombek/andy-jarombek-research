@@ -50,6 +50,7 @@ act -W '.github/workflows/go-tests.yml'
 | `r`                | R programming.                                  |
 | `react`            | React.js front-end applications.                |
 | `splunk`           | Splunk enterprise queries and dashboards.       |
+| `vue`              | Vue.js front-end applications.                  |
 
 ### Version History
 
