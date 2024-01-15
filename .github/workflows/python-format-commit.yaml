@@ -3,7 +3,9 @@ name: Python Format Commit
 on:
   push:
     branches:
-      - feature/*
+      - 'feature/*'
+    paths:
+      - 'python/**.py'
 
   workflow_dispatch:
 
