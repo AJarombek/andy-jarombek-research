@@ -22,6 +22,15 @@ brew install act
 
 # Run a specific GitHub Actions workflow
 act -W '.github/workflows/go-tests.yml'
+
+# Run a specific GitHub Actions workflow, with verbose output
+act -W '.github/workflows/vue.yml' -v
+
+# Run a specific GitHub Actions workflow, detecting the event type automatically
+act -W '.github/workflows/vue.yml' --detect-event
+
+# Run a specific GitHub Actions workflow and a specific job, detecting the event type automatically 
+act -W '.github/workflows/vue.yml' -j vue_e2e_tests --detect-event
 ```
 
 ### Files
