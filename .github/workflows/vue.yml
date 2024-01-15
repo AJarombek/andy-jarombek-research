@@ -53,11 +53,15 @@ jobs:
   vue_e2e_tests:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    container: node:20.11.0
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
       - name: Initialize NPM
         working-directory: ./vue/aj-poll
