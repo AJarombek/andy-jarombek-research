@@ -76,6 +76,8 @@ jobs:
       - name: Vue & Playwright E2E Tests
         working-directory: ./vue/aj-poll
         run: npx playwright test
+        env:
+          HOME: /root
 
       - name: Generate Playwright HTML Report
         uses: actions/upload-artifact@v3
