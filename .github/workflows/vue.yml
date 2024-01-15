@@ -1,0 +1,94 @@
+name: Vue Format, Lint, and Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  vue_format_lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container: node:20.11.0
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Initialize NPM
+        working-directory: ./vue/aj-poll
+        run: npm ci
+
+      - name: Lint TypeScript Code
+        working-directory: ./vue/aj-poll
+        run: npm run lint
+
+      - name: Format TypeScript Code
+        working-directory: ./vue/aj-poll
+        run: npm run format-check
+
+      - name: Type Check TypeScript Code
+        working-directory: ./vue/aj-poll
+        run: npm run type-check
+
+  vue_unit_tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container: node:20.11.0
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Initialize NPM
+        working-directory: ./vue/aj-poll
+        run: npm ci
+
+      - name: Vue Unit Tests
+        working-directory: ./vue/aj-poll
+        run: npm run test:unit:cicd
+
+  vue_e2e_tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: false
+    container:
+      image: mcr.microsoft.com/playwright:v1.40.0-jammy
+
+    steps:
+      # https://github.com/microsoft/playwright/issues/27313
+      - name: Fix Playwright Issue
+        run: apt-get remove -y libsoup2.4
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: './vue/aj-poll/.nvmrc'
+
+      - name: Initialize NPM
+        working-directory: ./vue/aj-poll
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        working-directory: ./vue/aj-poll
+        run: npx playwright install --with-deps
+
+      - name: Vue & Playwright E2E Tests
+        working-directory: ./vue/aj-poll
+        run: npm run test:e2e
+        env:
+          # https://github.com/microsoft/playwright/issues/6500
+          HOME: /root
+
+      - name: Generate Playwright HTML Report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: vue/aj-poll/playwright-report/
+          retention-days: 30
