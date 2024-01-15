@@ -53,6 +53,8 @@ jobs:
   vue_e2e_tests:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    container:
+      image: mcr.microsoft.com/playwright:v1.40.0-jammy
 
     steps:
       - name: Checkout Repository
@@ -73,7 +75,7 @@ jobs:
 
       - name: Vue & Playwright E2E Tests
         working-directory: ./vue/aj-poll
-        run: npm run test:e2e
+        run: npx playwright test
 
       - name: Generate Playwright HTML Report
         uses: actions/upload-artifact@v3
