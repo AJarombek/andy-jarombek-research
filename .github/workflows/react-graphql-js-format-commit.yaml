@@ -10,6 +10,7 @@ on:
 jobs:
   format_commit:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     container: node:18.16.1
 
     steps:
