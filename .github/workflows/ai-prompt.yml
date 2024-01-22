@@ -13,6 +13,9 @@ on:
 
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 1 * *"
+
 jobs:
   ai_prompt_engineering:
     runs-on: ubuntu-latest

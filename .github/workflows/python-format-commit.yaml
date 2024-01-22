@@ -9,6 +9,9 @@ on:
 
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 1 * *"
+
 jobs:
   format_commit:
     runs-on: ubuntu-latest

@@ -7,6 +7,9 @@ on:
 
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 1 * *"
+
 jobs:
   format_lint:
     runs-on: ubuntu-latest
