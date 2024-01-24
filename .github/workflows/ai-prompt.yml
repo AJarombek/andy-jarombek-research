@@ -31,6 +31,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
 
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
       - name: Install Dependencies
         working-directory: ./ai/prompt
         run: make install

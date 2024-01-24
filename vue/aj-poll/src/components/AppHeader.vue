@@ -21,12 +21,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: 'AppHeader'
-}
-</script>
-
 <style scoped>
 header {
   line-height: 1.5;
