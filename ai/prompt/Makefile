@@ -1,3 +1,7 @@
+# Makefile for prompt engineering research
+# Author: Andrew Jarombek
+# Date: 12/31/2023
+
 install:
 	poetry install
 

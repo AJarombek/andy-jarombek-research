@@ -13,6 +13,9 @@ on:
 
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 1 * *"
+
 jobs:
   black_formatting:
     runs-on: ubuntu-latest
