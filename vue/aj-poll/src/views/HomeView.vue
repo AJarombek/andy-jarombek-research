@@ -1,10 +1,5 @@
-<script>
-import {defineComponent} from "vue";
-import LanguagePoll from "@/components/LanguagePoll.vue";
-
-export default defineComponent({
-  components: {LanguagePoll}
-})
+<script setup lang="ts">
+import LanguagePoll from '@/components/LanguagePoll.vue'
 </script>
 
 <template>

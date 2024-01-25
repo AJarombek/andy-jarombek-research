@@ -163,21 +163,19 @@ const languages: Language[] = [
 <template>
   <table>
     <thead>
-    <tr>
-      <th>Language</th>
-      <th>Votes</th>
-    </tr>
+      <tr>
+        <th>Language</th>
+        <th>Points</th>
+      </tr>
     </thead>
     <tbody>
-    <tr v-for="language in languages" :key="language.id">
-      <td>
-        <p>{{ language.name }}</p>
-        <p v-if="language.firstPlaceVotes > 0" class="fpv">
-          ({{ language.firstPlaceVotes }})
-        </p>
-      </td>
-      <td>{{ language.votes }}</td>
-    </tr>
+      <tr v-for="language in languages" :key="language.id">
+        <td>
+          <p>{{ language.name }}</p>
+          <p v-if="language.firstPlaceVotes > 0" class="fpv">({{ language.firstPlaceVotes }})</p>
+        </td>
+        <td>{{ language.votes }}</td>
+      </tr>
     </tbody>
   </table>
 </template>
