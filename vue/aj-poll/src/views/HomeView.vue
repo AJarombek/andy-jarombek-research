@@ -11,7 +11,6 @@ export default defineComponent({
   <main>
     <div class="wrapper">
       <h1>Top 25 Programming Languages</h1>
-      <!-- Create a table of top 25 programming languages dynamically based on a list in the script -->
       <LanguagePoll />
     </div>
   </main>
