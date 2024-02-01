@@ -63,6 +63,12 @@ act -W '.github/workflows/vue.yml' -j vue_e2e_tests --detect-event
 
 ### Version History
 
+**[v0.0.14](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.14) - Vue.js Language Poll App**
+
+> Release Date: January 26th, 2024
+
+* Vue.js application "AJ Top 25 Poll" with GitHub Actions support
+
 **[v0.0.13](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.13) - AI Prompt Engineering Basics**
 
 > Release Date: January 11th, 2024
