@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const isPollDropdownOpen = ref(false);
-const isAboutDropdownOpen = ref(false);
+const isPollDropdownOpen = ref(false)
+const isAboutDropdownOpen = ref(false)
 </script>
 
 <template>
@@ -11,7 +11,12 @@ const isAboutDropdownOpen = ref(false);
       <img class="logo" src="../assets/logo.svg" alt="AJ Poll Logo" />
       <h1>AJ Top 25 Poll</h1>
       <nav>
-        <div @click="isPollDropdownOpen = !isPollDropdownOpen; isAboutDropdownOpen = false">
+        <div
+          @click="
+            isPollDropdownOpen = !isPollDropdownOpen
+            isAboutDropdownOpen = false
+          "
+        >
           <div class="dropdown">
             <p>Polls</p>
             <font-awesome-icon icon="chevron-down" v-if="!isPollDropdownOpen" />
@@ -23,7 +28,12 @@ const isAboutDropdownOpen = ref(false);
             </div>
           </div>
         </div>
-        <div @click="isAboutDropdownOpen = !isAboutDropdownOpen; isPollDropdownOpen = false">
+        <div
+          @click="
+            isAboutDropdownOpen = !isAboutDropdownOpen
+            isPollDropdownOpen = false
+          "
+        >
           <div class="dropdown">
             <p>About</p>
             <font-awesome-icon icon="chevron-down" v-if="!isAboutDropdownOpen" />
