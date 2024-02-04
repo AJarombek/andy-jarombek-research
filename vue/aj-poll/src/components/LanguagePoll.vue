@@ -1,9 +1,9 @@
 <script setup lang="ts">
 interface Language {
-  id: number
-  name: string
-  votes: number
-  firstPlaceVotes: number
+  id: number;
+  name: string;
+  votes: number;
+  firstPlaceVotes: number;
 }
 
 const languages: Language[] = [
@@ -157,7 +157,7 @@ const languages: Language[] = [
     votes: 16,
     firstPlaceVotes: 0
   }
-]
+];
 </script>
 
 <template>

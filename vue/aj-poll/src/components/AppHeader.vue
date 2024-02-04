@@ -1,21 +1,50 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const isPollDropdownOpen = ref(false);
+const isAboutDropdownOpen = ref(false);
+</script>
+
 <template>
   <header>
     <div class="wrapper">
       <img class="logo" src="../assets/logo.svg" alt="AJ Poll Logo" />
       <h1>AJ Top 25 Poll</h1>
       <nav>
-        <RouterLink to="/">
+        <div
+          @click="
+            isPollDropdownOpen = !isPollDropdownOpen;
+            isAboutDropdownOpen = false;
+          "
+        >
           <div class="dropdown">
             <p>Polls</p>
-            <font-awesome-icon icon="chevron-down" />
+            <font-awesome-icon icon="chevron-down" v-if="!isPollDropdownOpen" />
+            <font-awesome-icon icon="chevron-up" v-if="isPollDropdownOpen" />
+            <div class="dropdown-content" v-if="isPollDropdownOpen">
+              <RouterLink to="/">Languages</RouterLink>
+              <RouterLink to="/">Components</RouterLink>
+              <RouterLink to="/">Companies</RouterLink>
+            </div>
           </div>
-        </RouterLink>
-        <RouterLink to="/about">
+        </div>
+        <div
+          @click="
+            isAboutDropdownOpen = !isAboutDropdownOpen;
+            isPollDropdownOpen = false;
+          "
+        >
           <div class="dropdown">
             <p>About</p>
-            <font-awesome-icon icon="chevron-down" />
+            <font-awesome-icon icon="chevron-down" v-if="!isAboutDropdownOpen" />
+            <font-awesome-icon icon="chevron-up" v-if="isAboutDropdownOpen" />
+            <div class="dropdown-content" v-if="isAboutDropdownOpen">
+              <RouterLink to="/about">About</RouterLink>
+              <RouterLink to="/">GitHub</RouterLink>
+              <RouterLink to="/">My Website</RouterLink>
+            </div>
           </div>
-        </RouterLink>
+        </div>
       </nav>
     </div>
   </header>
@@ -60,5 +89,26 @@ nav {
 
 .dropdown p {
   margin: 0 0.5rem;
+}
+
+.dropdown p:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  z-index: 1;
+  background-color: var(--color-background);
+}
+
+.dropdown-content a {
+  padding: 0.5rem;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
 }
 </style>
