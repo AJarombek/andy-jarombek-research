@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LanguagePoll from '@/components/LanguagePoll.vue'
+import LanguagePoll from '@/components/LanguagePoll.vue';
 </script>
 
 <template>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const isPollDropdownOpen = ref(false)
-const isAboutDropdownOpen = ref(false)
+const isPollDropdownOpen = ref(false);
+const isAboutDropdownOpen = ref(false);
 </script>
 
 <template>
@@ -13,8 +13,8 @@ const isAboutDropdownOpen = ref(false)
       <nav>
         <div
           @click="
-            isPollDropdownOpen = !isPollDropdownOpen
-            isAboutDropdownOpen = false
+            isPollDropdownOpen = !isPollDropdownOpen;
+            isAboutDropdownOpen = false;
           "
         >
           <div class="dropdown">
@@ -30,8 +30,8 @@ const isAboutDropdownOpen = ref(false)
         </div>
         <div
           @click="
-            isAboutDropdownOpen = !isAboutDropdownOpen
-            isPollDropdownOpen = false
+            isAboutDropdownOpen = !isAboutDropdownOpen;
+            isPollDropdownOpen = false;
           "
         >
           <div class="dropdown">
