@@ -3,6 +3,9 @@ import { ref } from 'vue';
 
 const isPollDropdownOpen = ref(false);
 const isAboutDropdownOpen = ref(false);
+
+const githubUrl = 'https://github.com/AJarombek';
+const websiteUrl = 'https://jarombek.com/';
 </script>
 
 <template>
@@ -22,9 +25,9 @@ const isAboutDropdownOpen = ref(false);
             <font-awesome-icon icon="chevron-down" v-if="!isPollDropdownOpen" />
             <font-awesome-icon icon="chevron-up" v-if="isPollDropdownOpen" />
             <div class="dropdown-content" v-if="isPollDropdownOpen">
-              <RouterLink to="/">Languages</RouterLink>
-              <RouterLink to="/">Components</RouterLink>
-              <RouterLink to="/">Companies</RouterLink>
+              <RouterLink to="/polls/languages">Languages</RouterLink>
+              <RouterLink to="/polls/components">Components</RouterLink>
+              <RouterLink to="/polls/companies">Companies</RouterLink>
             </div>
           </div>
         </div>
@@ -40,8 +43,14 @@ const isAboutDropdownOpen = ref(false);
             <font-awesome-icon icon="chevron-up" v-if="isAboutDropdownOpen" />
             <div class="dropdown-content" v-if="isAboutDropdownOpen">
               <RouterLink to="/about">About</RouterLink>
-              <RouterLink to="/">GitHub</RouterLink>
-              <RouterLink to="/">My Website</RouterLink>
+              <a :href="githubUrl" target="_blank">
+                GitHub
+                <font-awesome-icon icon="arrow-up-right-from-square" />
+              </a>
+              <a :href="websiteUrl" target="_blank">
+                My Website
+                <font-awesome-icon icon="arrow-up-right-from-square" />
+              </a>
             </div>
           </div>
         </div>

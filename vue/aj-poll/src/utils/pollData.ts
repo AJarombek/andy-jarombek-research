@@ -1,12 +1,4 @@
-<script setup lang="ts">
-interface Language {
-  id: number;
-  name: string;
-  votes: number;
-  firstPlaceVotes: number;
-}
-
-const languages: Language[] = [
+export const languages: PollEntry[] = [
   {
     id: 1,
     name: 'Python',
@@ -158,66 +150,7 @@ const languages: Language[] = [
     firstPlaceVotes: 0
   }
 ];
-</script>
 
-<template>
-  <table>
-    <thead>
-      <tr>
-        <th>Language</th>
-        <th>Points</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="language in languages" :key="language.id">
-        <td>
-          <p>{{ language.name }}</p>
-          <p v-if="language.firstPlaceVotes > 0" class="fpv">({{ language.firstPlaceVotes }})</p>
-        </td>
-        <td>{{ language.votes }}</td>
-      </tr>
-    </tbody>
-  </table>
-</template>
+export const components: PollEntry[] = [];
 
-<style scoped>
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: 1px solid var(--color-border);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-thead {
-  background-color: var(--color-background);
-  border-bottom: 1px solid var(--color-border);
-}
-
-tbody {
-  background-color: var(--color-background);
-}
-
-tr {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--color-border);
-}
-
-td {
-  display: flex;
-  padding: 0 1rem;
-}
-
-td p:first-child {
-  font-weight: 600;
-}
-
-.fpv {
-  color: var(--color-text-light);
-  margin-left: 0.25rem;
-}
-</style>
+export const companies: PollEntry[] = [];
