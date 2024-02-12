@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import PollView from '../views/PollView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: PollView
     },
     {
       path: '/about',
@@ -24,17 +24,17 @@ const router = createRouter({
           {
             path: 'languages',
             name: 'languages-poll',
-            component: HomeView
+            component: PollView
           },
           {
             path: 'components',
             name: 'components-poll',
-            component: HomeView
+            component: PollView
           },
           {
             path: 'companies',
             name: 'companies-poll',
-            component: HomeView
+            component: PollView
           },
         ],
     }
