@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-import LanguagePoll from "@/components/LanguagePoll.vue";
-import Poll from "@/components/Poll.vue";
-import CompaniesPoll from "@/components/CompaniesPoll.vue";
-import ComponentsPoll from "@/components/ComponentsPoll.vue";
+import type { RouteLocationNormalized } from 'vue-router';
+import PollTable from '@/components/PollTable.vue';
+import { companies, components, languages } from '@/utils/pollData';
 
 const router = useRouter();
 
 let pageTitle = '';
-let currentChildComponent = null;
+let entryName = '';
+let data: PollEntry[] = [];
 
 // Set initial page title and current child component based on the current route
 updatePageInfo(router.currentRoute.value);
@@ -18,27 +18,31 @@ router.afterEach((to) => {
   updatePageInfo(to);
 });
 
-function updatePageInfo(route) {
+function updatePageInfo(route: RouteLocationNormalized) {
   switch (route.path) {
     case '/polls/languages':
       pageTitle = 'Top 25 Programming Languages';
-      currentChildComponent = LanguagePoll;
+      data = languages;
+      entryName = 'Language';
       break;
     case '/polls/components':
       pageTitle = 'Top 25 Engineering Components';
-      currentChildComponent = ComponentsPoll;
+      data = components;
+      entryName = 'Component';
       break;
     case '/polls/companies':
       pageTitle = 'Top 25 Engineering Companies';
-      currentChildComponent = CompaniesPoll;
+      data = companies;
+      entryName = 'Company';
       break;
     default:
       pageTitle = 'Top 25 Programming Languages';
-      currentChildComponent = LanguagePoll;
+      data = languages;
+      entryName = 'Language';
   }
 }
 </script>
 
 <template>
-  <Poll :title="pageTitle" :childComponent="currentChildComponent" />
+  <PollTable :title="pageTitle" :entry-name="entryName" :data="data" />
 </template>

@@ -20,23 +20,23 @@ const router = createRouter({
     {
       path: '/polls',
       name: 'polls',
-        children: [
-          {
-            path: 'languages',
-            name: 'languages-poll',
-            component: PollView
-          },
-          {
-            path: 'components',
-            name: 'components-poll',
-            component: PollView
-          },
-          {
-            path: 'companies',
-            name: 'companies-poll',
-            component: PollView
-          },
-        ],
+      children: [
+        {
+          path: 'languages',
+          name: 'languages-poll',
+          component: PollView
+        },
+        {
+          path: 'components',
+          name: 'components-poll',
+          component: PollView
+        },
+        {
+          path: 'companies',
+          name: 'companies-poll',
+          component: PollView
+        }
+      ]
     }
   ]
 });
