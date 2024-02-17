@@ -151,6 +151,159 @@ export const languages: PollEntry[] = [
   }
 ];
 
-export const components: PollEntry[] = [];
+export const components: PollEntry[] = [
+  {
+    id: 1,
+    name: 'React.js',
+    votes: 48,
+    firstPlaceVotes: 1
+  },
+  {
+    id: 2,
+    name: 'Vue.js',
+    votes: 35,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 3,
+    name: 'Docker',
+    votes: 30,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 4,
+    name: 'Databricks',
+    votes: 28,
+    firstPlaceVotes: 2
+  },
+  {
+    id: 5,
+    name: 'Node.js',
+    votes: 28,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 6,
+    name: 'Spark',
+    votes: 24,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 7,
+    name: 'Angular',
+    votes: 24,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 8,
+    name: 'Kubernetes',
+    votes: 23,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 9,
+    name: 'Flask',
+    votes: 23,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 10,
+    name: 'Django',
+    votes: 22,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 11,
+    name: 'Spring',
+    votes: 21,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 12,
+    name: 'OpenAI',
+    votes: 20,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 13,
+    name: 'LangChain',
+    votes: 19,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 14,
+    name: 'AWS',
+    votes: 19,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 15,
+    name: 'Express.js',
+    votes: 18,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 16,
+    name: 'Terraform',
+    votes: 17,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 17,
+    name: 'TensorFlow',
+    votes: 17,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 18,
+    name: 'GraphQL',
+    votes: 16,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 19,
+    name: 'PyTorch',
+    votes: 16,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 20,
+    name: 'Airflow',
+    votes: 15,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 21,
+    name: 'Keras',
+    votes: 15,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 22,
+    name: 'Flutter',
+    votes: 14,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 23,
+    name: '.NET Core',
+    votes: 14,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 24,
+    name: 'DALL-E',
+    votes: 14,
+    firstPlaceVotes: 0
+  },
+  {
+    id: 25,
+    name: 'PostgreSQL',
+    votes: 13,
+    firstPlaceVotes: 0
+  },
+];
 
-export const companies: PollEntry[] = [];
+export const companies: PollEntry[] = [
+
+];
