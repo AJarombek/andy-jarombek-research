@@ -301,7 +301,7 @@ export const components: PollEntry[] = [
     name: 'PostgreSQL',
     votes: 13,
     firstPlaceVotes: 0
-  },
+  }
 ];
 
 export const companies: PollEntry[] = [
@@ -454,5 +454,5 @@ export const companies: PollEntry[] = [
     name: 'Dell Technologies',
     votes: 11,
     firstPlaceVotes: 0
-  },
+  }
 ];
