@@ -4,6 +4,7 @@
 **/.vagrant
 **/plz-out
 **/.terraform
+**/.DS_Store
 
 assembly/x86/arithmetic
 assembly/x86/atomic

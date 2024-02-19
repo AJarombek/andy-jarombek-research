@@ -11,7 +11,7 @@ const websiteUrl = 'https://jarombek.com/';
 <template>
   <header>
     <div class="wrapper">
-      <img class="logo" src="../assets/logo.svg" alt="AJ Poll Logo" />
+      <img class="logo" src="../assets/aj-logo.png" alt="AJ Poll Logo" />
       <h1>AJ Top 25 Poll</h1>
       <nav>
         <div
