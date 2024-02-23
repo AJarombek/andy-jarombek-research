@@ -18,3 +18,9 @@ type-check:
 
 # Run lint, format-check, and type-check to ensure the CI/CD pipeline passes
 ci-check: lint format-check type-check
+
+e2e:
+	npm run test:e2e
+
+unit:
+	npm run test:unit

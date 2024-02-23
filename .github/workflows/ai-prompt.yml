@@ -19,6 +19,9 @@ on:
 jobs:
   ai_prompt_engineering:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        directory: ['dall-e', 'prompt']
     timeout-minutes: 5
     steps:
       - run: echo "Job running on a ${{ runner.os }} server"
@@ -35,17 +38,17 @@ jobs:
         uses: snok/install-poetry@v1
 
       - name: Install Dependencies
-        working-directory: ./ai/prompt
+        working-directory: ./ai/${{ matrix.directory }}
         run: make install
 
       - name: Lint Python
-        working-directory: ./ai/prompt
+        working-directory: ./ai/${{ matrix.directory }}
         run: make lint
 
       - name: Format Python
-        working-directory: ./ai/prompt
+        working-directory: ./ai/${{ matrix.directory }}
         run: make format
 
       - name: Spell Check Python
-        working-directory: ./ai/prompt
+        working-directory: ./ai/${{ matrix.directory }}
         run: make spell_check
