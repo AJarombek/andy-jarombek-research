@@ -3,7 +3,7 @@
 # Date: 2/23/2024
 
 [tool.poetry]
-name = "grpc-running-app"
+name = "grpc-running-service"
 version = "0.1.0"
 description = "Python gRPC Sample Application"
 authors = ["Andrew Jarombek <andrew@jarombek.com>"]
