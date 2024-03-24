@@ -1,0 +1,26 @@
+// Define a gRPC Service for viewing a user's running mileage
+// Author: Andrew Jarombek
+// Date: 2/23/2024
+
+syntax = "proto3";
+
+package running;
+
+service Running {
+  rpc GetUserWeeklyMileage (WeeklyMileageRequest) returns (WeeklyMileageResponse) {}
+}
+
+message WeeklyMileageRequest {
+  string username = 1;
+  string startDate = 2;
+  string endDate = 3;
+}
+
+message WeeklyMileage {
+  string week = 1;
+  double mileage = 2;
+}
+
+message WeeklyMileageResponse {
+  repeated WeeklyMileage mileages = 1;
+}

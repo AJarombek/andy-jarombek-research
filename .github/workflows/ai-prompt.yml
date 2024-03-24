@@ -9,7 +9,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'ai/prompt/*'
+      - 'ai/*'
 
   workflow_dispatch:
 
