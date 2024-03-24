@@ -1,0 +1,77 @@
+# Poetry configuration for a Python virtual environment.
+# Author: Andrew Jarombek
+# Date: 3/21/2024
+
+[tool.poetry]
+name = "running-server"
+version = "0.1.0"
+description = "Python gRPC Running Server"
+authors = ["Andrew Jarombek <andrew@jarombek.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+grpcio = "1.62.0"
+grpcio-tools = "1.62.0"
+grpc-running-service = { path = "../service" }
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+ruff = "^0.1.7"
+codespell = "^2.2.6"
+tomli = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+skip-string-normalization = true
+target-version = ["py312"]
+
+[tool.ruff]
+extend-exclude = [
+    "docs/*",
+    # External to the project's coding standards
+    "tests/**/fixtures/*",
+]
+fix = true
+line-length = 88
+src = ["src"]
+target-version = "py312"
+
+[tool.ruff.lint]
+unfixable = [
+    "ERA", # do not autoremove commented out code
+]
+extend-select = [
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "ERA", # flake8-eradicate/eradicate
+    "I",   # isort
+    "N",   # pep8-naming
+    "PIE", # flake8-pie
+    "PGH", # pygrep
+    "RUF", # ruff checks
+    "SIM", # flake8-simplify
+    "TCH", # flake8-type-checking
+    "TID", # flake8-tidy-imports
+    "UP",  # pyupgrade
+]
+ignore = [
+    "B904", # use 'raise ... from err'
+    "B905", # use explicit 'strict=' parameter with 'zip()'
+    "N818", #  Exception name should be named with an Error suffix
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.isort]
+force-single-line = false
+lines-between-types = 1
+lines-after-imports = 2
+known-first-party = ["poetry"]
+known-third-party = ["poetry.core"]
+
+[tool.codespell]
+skip = 'poetry.lock'
