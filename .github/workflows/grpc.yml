@@ -1,0 +1,56 @@
+# GitHub Action for performing Linting, Formatting, Spell Checking, and testing for gRPC code.
+# Author: Andrew Jarombek
+# Date: 4/1/2024
+
+name: gRPC
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - 'grpc/*'
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  grpc:
+    runs-on: ubuntu-latest
+    env:
+      ROOT_DIR: "grpc"
+    strategy:
+      matrix:
+        directory: ['client', 'server', 'service']
+    timeout-minutes: 5
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Install Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      - name: Install Dependencies
+        working-directory: ./$ROOT_DIR/${{ matrix.directory }}
+        run: make install
+
+      - name: Lint Python
+        working-directory: ./$ROOT_DIR/${{ matrix.directory }}
+        run: make lint
+
+      - name: Format Python
+        working-directory: ./$ROOT_DIR/${{ matrix.directory }}
+        run: make format
+
+      - name: Spell Check Python
+        working-directory: ./$ROOT_DIR/${{ matrix.directory }}
+        run: make spell_check
