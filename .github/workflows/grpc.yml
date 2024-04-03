@@ -2,14 +2,14 @@
 # Author: Andrew Jarombek
 # Date: 4/1/2024
 
-name: gRPC
+name: GRPC
 
 on:
   pull_request:
     branches:
       - 'main'
     paths:
-      - 'grpc/*'
+      - 'grpc/**'
 
   workflow_dispatch:
 

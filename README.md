@@ -14,12 +14,19 @@ to keep research code samples up to date with the latest technologies.
 
 ### Commands
 
+**MacOS Setup**
+
+```bash
+# Linter for GitHub Actions
+brew install actionlint
+
+# Install the act CLI
+brew install act
+```
+
 **Run GitHub Actions Locally**
 
 ```bash
-# Install the act CLI
-brew install act
-
 # Run a specific GitHub Actions workflow
 act -W '.github/workflows/go-tests.yml'
 
@@ -48,6 +55,7 @@ act -W '.github/workflows/vue.yml' -j vue_e2e_tests --detect-event
 | `databricks`       | Databricks platform programming with Spark.     |
 | `fortran`          | Fortran programming.                            |
 | `go`               | Go programming.                                 |
+| `grpc`             | gRPC service and client/server applications.    |
 | `htmx`             | HTMX front-end applications.                    |
 | `javascript`       | JavaScript programming.                         |
 | `jenkins`          | Jenkins CI/CD platform setup.                   |
