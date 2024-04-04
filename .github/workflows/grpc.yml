@@ -1,0 +1,101 @@
+# GitHub Action for performing Linting, Formatting, Spell Checking, and testing for gRPC code.
+# Author: Andrew Jarombek
+# Date: 4/1/2024
+
+name: GRPC
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - 'grpc/**'
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  lint-format-spell-check:
+    runs-on: ubuntu-latest
+    env:
+      ROOT_DIR: "grpc"
+    strategy:
+      matrix:
+        directory: ['client', 'server']
+    timeout-minutes: 5
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Install Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      - name: Install Dependencies
+        working-directory: ./${{ env.ROOT_DIR }}/${{ matrix.directory }}
+        run: make install
+
+      - name: Lint Python
+        working-directory: ./${{ env.ROOT_DIR }}/${{ matrix.directory }}
+        run: make lint
+
+      - name: Format Python
+        working-directory: ./${{ env.ROOT_DIR }}/${{ matrix.directory }}
+        run: make format
+
+      - name: Spell Check Python
+        working-directory: ./${{ env.ROOT_DIR }}/${{ matrix.directory }}
+        run: make spell_check
+
+  test:
+    runs-on: ubuntu-latest
+    env:
+      ROOT_DIR: "grpc"
+    timeout-minutes: 5
+    if: false
+    steps:
+      - run: echo "Job running on a ${{ runner.os }} server"
+
+      - name: Install Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install Netcat
+        run: sudo apt-get update && sudo apt-get install -y netcat
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      - name: Install Server Dependencies
+        working-directory: ./${{ env.ROOT_DIR }}/server
+        run: make install
+
+      - name: Install Client Dependencies
+        working-directory: ./${{ env.ROOT_DIR }}/client
+        run: make install
+
+      - name: Start Server
+        working-directory: ./${{ env.ROOT_DIR }}/server
+        run: make run &
+
+      - name: Run Client
+        working-directory: ./${{ env.ROOT_DIR }}/client
+        run: |
+          while ! nc -z localhost 50051; do   
+            sleep 1
+            echo "Waiting for server to start..."
+          done
+          
+          make run

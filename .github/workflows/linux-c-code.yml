@@ -7,6 +7,7 @@ name: Linux System Programming C Code
 on:
   pull_request:
     branches: ["main"]
+    paths: ['linux/**']
 
   workflow_dispatch:
 
