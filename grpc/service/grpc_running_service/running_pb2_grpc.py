@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import running_pb2 as running__pb2
+from . import running_pb2 as running__pb2
 
 
 class RunningStub(object):
