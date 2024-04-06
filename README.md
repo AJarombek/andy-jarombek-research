@@ -68,8 +68,20 @@ act -W '.github/workflows/vue.yml' -j vue_e2e_tests --detect-event
 | `react`            | React.js front-end applications.                |
 | `splunk`           | Splunk enterprise queries and dashboards.       |
 | `vue`              | Vue.js front-end applications.                  |
+| `Makefile`         | Make build commands for the entire repository.  |
 
 ### Version History
+
+**[v0.0.15](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.15) - gRPC Running Client/Server**
+
+> Release Date: April 5th, 2024
+
+* Basic gRPC client/server application with running data.
+  * gRPC service in Python & Protobuf.
+  * gRPC server in Python.
+  * gRPC client in Python.
+* GitHub Actions for gRPC client/server application.
+* CODEOWNERS and pull request template for the repository.
 
 **[v0.0.14](https://github.com/AJarombek/andy-jarombek-research/tree/v0.0.14) - Vue.js Language Poll App**
 
