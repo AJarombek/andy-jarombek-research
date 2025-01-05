@@ -7,24 +7,28 @@ Date: 1/3/2025
 
 
 class A:
-    def x(self):
+    def x(self) -> str:
         print('A.x')
-        self.y()
+        y = self.y()
+        return ','.join([f'A.x', y])
 
-    def y(self):
+    def y(self) -> str:
         print('A.y')
+        return 'A.y'
 
 
 class B(A):
-    def y(self):
+    def y(self) -> str:
         print('B.y')
+        return 'B.y'
 
 
 class C(B):
     @staticmethod
-    def z():
+    def z() -> str:
         print('C.z')
-        A().x()
+        x = A().x()
+        return ','.join([f'C.z', x])
 
 
 if __name__ == '__main__':
