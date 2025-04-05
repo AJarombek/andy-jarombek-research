@@ -9,3 +9,13 @@ route RootRoute { path: "/", to: MainPage }
 page MainPage {
   component: import { MainPage } from "@src/MainPage"
 }
+
+route PrRoute { path: "/prs", to: PrPage }
+page PrPage {
+  component: import { PrPage } from "@src/PrPage"
+}
+
+route ResultsRoute { path: "/results", to: ResultsPage }
+page ResultsPage {
+  component: import { ResultsPage } from "@src/ResultsPage"
+}

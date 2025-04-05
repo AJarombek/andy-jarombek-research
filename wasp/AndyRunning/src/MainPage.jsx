@@ -19,19 +19,15 @@ export const MainPage = () => {
         <div className="buttons">
           <a
             className="button button-filled"
-            href="https://wasp.sh/docs/tutorial/create"
-            target="_blank"
-            rel="noreferrer noopener"
+            href="/prs"
           >
-            Take the Tutorial
+            Personal Records
           </a>
           <a
             className="button button-outline"
-            href="https://discord.com/invite/rzdnErX"
-            target="_blank"
-            rel="noreferrer noopener"
+            href="/results"
           >
-            Chat on Discord
+            Race Results
           </a>
         </div>
       </main>
