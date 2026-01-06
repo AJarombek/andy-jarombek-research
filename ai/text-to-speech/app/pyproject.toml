@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "torch",
     "transformers",
+    "huggingface_hub[hf_xet]",
     "kokoro>=0.3.1",
     "soundfile",
     "misaki[en]"
