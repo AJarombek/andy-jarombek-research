@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  execute:
+    build: .
+    volumes:
+      - ./app:/workspace/app
+    working_dir: /workspace/app
+    command: [ "python3", "main.py" ]
+  app:
+    build: .
+    volumes:
+      - ./app:/workspace/app
+    working_dir: /workspace/app
+    command: ["/bin/bash"]
+    tty: true
+    stdin_open: true
