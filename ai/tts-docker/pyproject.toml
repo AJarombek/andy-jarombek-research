@@ -1,0 +1,20 @@
+[project]
+name = "text-to-speech"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "torch",
+    "transformers",
+    "huggingface_hub[hf_xet]",
+    "kokoro>=0.3.1",
+    "piper-tts",
+    "soundfile",
+    "misaki[en]",
+    "tokenizers>=0.13"  # Override to use a newer tokenizers release with upstream fixes
+]
+
+[tool.uv.workspace]
+members = [
+    "app",
+]

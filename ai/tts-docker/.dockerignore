@@ -1,0 +1,31 @@
+# Ignore local virtual environments and caches
+**/.venv
+app/.venv
+.venv
+venv
+env
+ENV
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor and OS files
+.vscode
+.idea
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# dotenv
+.env
+
+# Dist/build
+build/
+dist/
+*.egg-info/
+

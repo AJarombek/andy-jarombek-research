@@ -1,5 +1,6 @@
 from pathlib import Path
 
+import torch
 import soundfile
 import numpy as np
 from kokoro import KPipeline
@@ -98,6 +99,14 @@ class KokoroRunner(BaseModelRunner):
 
 
 if __name__ == "__main__":
+    print("torch.cuda.is_available():", torch.cuda.is_available())
+    if torch.cuda.is_available():
+        print("cuda devices:", torch.cuda.device_count())
+        print("current device:", torch.cuda.current_device())
+        print("device name:", torch.cuda.get_device_name(0))
+        print("memory allocated:", torch.cuda.memory_allocated(0))
+        print("memory reserved:", torch.cuda.memory_reserved(0))
+
     # Instantiate model-specific runners. Add other runners (classes) here as new models are experimented with.
     runners: list[BaseModelRunner] = [
         KokoroRunner(),
